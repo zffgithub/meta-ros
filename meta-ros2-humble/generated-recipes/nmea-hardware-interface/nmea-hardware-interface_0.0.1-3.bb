@@ -87,7 +87,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nmea_hardware_interface-release/archive/release/humble/nmea_hardware_interface/0.0.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nmea_hardware_interface"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/nmea_hardware_interface-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/nmea_hardware_interface-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5834643e97eb1419c678a0e6c0357bda3b655067"
 S = "${WORKDIR}/git"
 

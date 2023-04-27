@@ -65,7 +65,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_pipeline-release/archive/release/humble/camera_calibration/3.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/camera_calibration"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_pipeline-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_pipeline-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "04a919d921752aaa265b850402588dd044ebb83c"
 S = "${WORKDIR}/git"
 

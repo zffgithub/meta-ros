@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/kinematics_interface-release/archive/release/humble/kinematics_interface/0.0.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/kinematics_interface"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/kinematics_interface-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/kinematics_interface-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "58d1c9c450296174e4df819c17ba7213df8de60b"
 S = "${WORKDIR}/git"
 

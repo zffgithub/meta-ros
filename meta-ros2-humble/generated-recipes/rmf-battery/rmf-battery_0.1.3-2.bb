@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_battery-release/archive/release/humble/rmf_battery/0.1.3-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_battery"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_battery-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_battery-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "06ca11ea672762fa933bbf1f07765e960ee67184"
 S = "${WORKDIR}/git"
 

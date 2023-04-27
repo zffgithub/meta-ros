@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/cudnn_cmake_module-release/archive/release/humble/cudnn_cmake_module/0.0.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/cudnn_cmake_module"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/cudnn_cmake_module-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/cudnn_cmake_module-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a8ff5bec117c29bd02870896182d7a7a4345abce"
 S = "${WORKDIR}/git"
 

@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/urdf_tutorial-release/archive/release/humble/urdf_tutorial/1.0.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/urdf_tutorial"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/urdf_tutorial-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/urdf_tutorial-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "32102fe2e2293d6b009b7f1bfb9adfd7f8398e4f"
 S = "${WORKDIR}/git"
 

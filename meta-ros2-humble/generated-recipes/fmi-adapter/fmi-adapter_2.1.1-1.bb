@@ -64,7 +64,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/fmi_adapter-release/archive/release/humble/fmi_adapter/2.1.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/fmi_adapter"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/fmi_adapter-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/fmi_adapter-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "602e6041cfff0fddf127e4db8ed1ca9ca04c6c03"
 S = "${WORKDIR}/git"
 

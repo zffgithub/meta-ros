@@ -127,7 +127,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/robot_calibration-release/archive/release/humble/robot_calibration/0.8.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/robot_calibration"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/robot_calibration-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/robot_calibration-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ed63edcbe5b167f31d52e78dec844a26af9d0750"
 S = "${WORKDIR}/git"
 

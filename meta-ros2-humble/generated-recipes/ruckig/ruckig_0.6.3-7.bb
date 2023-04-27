@@ -40,7 +40,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ruckig-release/archive/release/humble/ruckig/0.6.3-7.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ruckig"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ruckig-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ruckig-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b95404e32eea3f0ff0354aacd85e8fc033078072"
 S = "${WORKDIR}/git"
 

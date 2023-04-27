@@ -41,7 +41,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/fastcdr-release/archive/release/humble/fastcdr/1.0.24-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/fastcdr"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/fastcdr-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/fastcdr-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "af820fd8dc61ca02e5d5a6b9abb90f2b8a4de818"
 S = "${WORKDIR}/git"
 

@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ament_lint-release/archive/release/humble/ament_lint_common/0.12.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ament_lint_common"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ament_lint-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ament_lint-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "0a2306f34f8781c6c6b738539d7994e9a8e48876"
 S = "${WORKDIR}/git"
 

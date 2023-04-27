@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rc_common_msgs_ros2-release/archive/release/humble/rc_common_msgs/0.5.3-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rc_common_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rc_common_msgs_ros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rc_common_msgs_ros2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9faa4c8a220dd6f9c8c7c68c1f2b5ae905139f51"
 S = "${WORKDIR}/git"
 

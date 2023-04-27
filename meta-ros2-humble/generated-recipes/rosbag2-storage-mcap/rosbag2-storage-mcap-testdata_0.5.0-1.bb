@@ -43,7 +43,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosbag2_storage_mcap-release/archive/release/humble/rosbag2_storage_mcap_testdata/0.5.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosbag2_storage_mcap_testdata"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosbag2_storage_mcap-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosbag2_storage_mcap-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b03b3a48eaad1f595e4be1f5b4febb2355fb0bdf"
 S = "${WORKDIR}/git"
 

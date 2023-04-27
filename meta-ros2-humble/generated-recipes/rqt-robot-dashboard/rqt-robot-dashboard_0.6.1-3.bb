@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_robot_dashboard-release/archive/release/humble/rqt_robot_dashboard/0.6.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_robot_dashboard"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_robot_dashboard-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_robot_dashboard-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a4d69c553403673d04edfe2ffc6c353e2341fa7a"
 S = "${WORKDIR}/git"
 

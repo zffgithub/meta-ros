@@ -83,7 +83,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_ros2-release/archive/release/humble/rmf_traffic_ros2/2.1.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_traffic_ros2"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_ros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_ros2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5496071f1df7bf297b3747093a2c70074fd1e466"
 S = "${WORKDIR}/git"
 

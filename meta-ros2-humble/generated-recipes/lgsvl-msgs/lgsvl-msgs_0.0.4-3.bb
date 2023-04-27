@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/lgsvl_msgs-release/archive/release/humble/lgsvl_msgs/0.0.4-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/lgsvl_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/lgsvl_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/lgsvl_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9e905ecf5dad06bff8f1da11ba7744474ca4c5f6"
 S = "${WORKDIR}/git"
 

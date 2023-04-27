@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/demos-release/archive/release/humble/dummy_sensors/0.20.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/dummy_sensors"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "3197addee98e33e0c2cc71b8b974d1718ab6b0be"
 S = "${WORKDIR}/git"
 

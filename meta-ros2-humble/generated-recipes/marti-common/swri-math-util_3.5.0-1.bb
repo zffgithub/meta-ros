@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/marti_common-release/archive/release/humble/swri_math_util/3.5.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/swri_math_util"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/marti_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/marti_common-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2eb93f55baea55aca8dab9197bf1402cca229850"
 S = "${WORKDIR}/git"
 

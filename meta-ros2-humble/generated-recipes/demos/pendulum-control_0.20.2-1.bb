@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/demos-release/archive/release/humble/pendulum_control/0.20.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/pendulum_control"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1d1dc7c8f5cf52d7873968dc7c58974a5adf7d53"
 S = "${WORKDIR}/git"
 

@@ -63,7 +63,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release/archive/release/humble/ur_bringup/2.2.5-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ur_bringup"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/Universal_Robots_ROS2_Driver-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "78468a80d54b0ea26479db3afa585e51392a192a"
 S = "${WORKDIR}/git"
 

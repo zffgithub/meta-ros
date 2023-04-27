@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/unique_identifier_msgs-release/archive/release/humble/unique_identifier_msgs/2.2.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/unique_identifier_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/unique_identifier_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/unique_identifier_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "76d43047f71a1ff2c9865094b325bf1b0a4becae"
 S = "${WORKDIR}/git"
 

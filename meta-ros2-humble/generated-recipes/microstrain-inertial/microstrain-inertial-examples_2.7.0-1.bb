@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/microstrain_inertial-release/archive/release/humble/microstrain_inertial_examples/2.7.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/microstrain_inertial_examples"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/microstrain_inertial-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/microstrain_inertial-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9840419da11551504dc0d1f6874a709c9604c190"
 S = "${WORKDIR}/git"
 

@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/irobot_create_msgs-release/archive/release/humble/irobot_create_msgs/2.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/irobot_create_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/irobot_create_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/irobot_create_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "77836ff7d886185b9661229719a11695c2a6fb88"
 S = "${WORKDIR}/git"
 

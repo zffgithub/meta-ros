@@ -42,7 +42,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/vrpn-release/archive/release/humble/vrpn/7.35.0-11.tar.gz
 ROS_BRANCH ?= "branch=release/humble/vrpn"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/vrpn-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/vrpn-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ff688a4507797c35a48710be678c06defc5e6629"
 S = "${WORKDIR}/git"
 

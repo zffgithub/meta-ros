@@ -65,7 +65,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2cli-release/archive/release/humble/ros2doctor/0.18.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros2doctor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2cli-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2cli-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "552da14e630a74097a4b5763212b7de5a6ca6bf8"
 S = "${WORKDIR}/git"
 

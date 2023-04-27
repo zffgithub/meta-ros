@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/yaml_cpp_vendor-release/archive/release/humble/yaml_cpp_vendor/8.0.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/yaml_cpp_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/yaml_cpp_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/yaml_cpp_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "79732fea6d0b597f6eafd3669a080911f55c5678"
 S = "${WORKDIR}/git"
 

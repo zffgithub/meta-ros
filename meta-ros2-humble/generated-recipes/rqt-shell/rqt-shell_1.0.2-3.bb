@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_shell-release/archive/release/humble/rqt_shell/1.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_shell"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_shell-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_shell-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9606e0924b9ca71a69dcc802e6aa2248876577cc"
 S = "${WORKDIR}/git"
 

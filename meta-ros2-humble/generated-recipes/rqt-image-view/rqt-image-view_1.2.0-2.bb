@@ -61,7 +61,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_image_view-release/archive/release/humble/rqt_image_view/1.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_image_view"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_image_view-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_image_view-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8d874dec7aef192be9b0dfa87875944782bfbc92"
 S = "${WORKDIR}/git"
 

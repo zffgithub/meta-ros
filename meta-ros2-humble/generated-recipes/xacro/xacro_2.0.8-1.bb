@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/xacro-release/archive/release/humble/xacro/2.0.8-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/xacro"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/xacro-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/xacro-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f8020d99fdcc9815acc2cd4d93886b4e0a44805d"
 S = "${WORKDIR}/git"
 

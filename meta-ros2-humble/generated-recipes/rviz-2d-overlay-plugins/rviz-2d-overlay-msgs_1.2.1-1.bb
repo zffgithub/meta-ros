@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rviz_2d_overlay_plugins-release/archive/release/humble/rviz_2d_overlay_msgs/1.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rviz_2d_overlay_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rviz_2d_overlay_plugins-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rviz_2d_overlay_plugins-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "aa7999e82eb9d16f3da86412ce8322a077e9aaf9"
 S = "${WORKDIR}/git"
 

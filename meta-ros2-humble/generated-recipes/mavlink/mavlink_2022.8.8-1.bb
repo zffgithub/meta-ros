@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/mavlink-gbp-release/archive/release/humble/mavlink/2022.8.8-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/mavlink"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/mavlink-gbp-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/mavlink-gbp-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5fef4abc2e601802f38d8027e5b3fc8fd9c1128b"
 S = "${WORKDIR}/git"
 

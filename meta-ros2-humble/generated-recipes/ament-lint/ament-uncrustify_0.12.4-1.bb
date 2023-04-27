@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ament_lint-release/archive/release/humble/ament_uncrustify/0.12.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ament_uncrustify"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ament_lint-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ament_lint-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "6e62b92962124797f03fd595b0f3a673e7402efe"
 S = "${WORKDIR}/git"
 

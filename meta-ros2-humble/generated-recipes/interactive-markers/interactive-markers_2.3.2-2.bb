@@ -66,7 +66,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/interactive_markers-release/archive/release/humble/interactive_markers/2.3.2-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/interactive_markers"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/interactive_markers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/interactive_markers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "dace99fbd8e164b82258ba4bc7f8bc213c9140b4"
 S = "${WORKDIR}/git"
 

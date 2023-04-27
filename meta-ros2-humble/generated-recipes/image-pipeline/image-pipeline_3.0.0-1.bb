@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_pipeline-release/archive/release/humble/image_pipeline/3.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/image_pipeline"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_pipeline-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_pipeline-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1b088656d2a75b276811ce1adf9d35eab1f0f42f"
 S = "${WORKDIR}/git"
 

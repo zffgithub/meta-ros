@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release/archive/release/humble/ur_moveit_config/2.2.5-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ur_moveit_config"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/Universal_Robots_ROS2_Driver-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a1afc54873eaa54d96a19be1d3f6fa54a2ea40dd"
 S = "${WORKDIR}/git"
 

@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release/archive/release/humble/ur_dashboard_msgs/2.2.5-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ur_dashboard_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/Universal_Robots_ROS2_Driver-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9e36ca5e893905804cdf58f528e7020d9476a537"
 S = "${WORKDIR}/git"
 

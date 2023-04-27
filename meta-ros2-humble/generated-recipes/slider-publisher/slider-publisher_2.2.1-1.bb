@@ -43,7 +43,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/slider_publisher-release/archive/release/humble/slider_publisher/2.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/slider_publisher"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/slider_publisher-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/slider_publisher-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c6c5ebabebf04022698ee3dc915cbbe2285c7ac1"
 S = "${WORKDIR}/git"
 

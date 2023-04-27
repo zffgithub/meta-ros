@@ -40,7 +40,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/googletest-release/archive/release/humble/gtest_vendor/1.10.9004-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/gtest_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/googletest-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/googletest-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "20131d7c09d8ddecdce7342c7bc482da0dabca48"
 S = "${WORKDIR}/git"
 

@@ -92,7 +92,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/microstrain_inertial-release/archive/release/humble/microstrain_inertial_driver/2.7.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/microstrain_inertial_driver"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/microstrain_inertial-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/microstrain_inertial-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "d4332d9a148d4b01e0769015787e82b9a2439b32"
 S = "${WORKDIR}/git"
 

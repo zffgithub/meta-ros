@@ -84,7 +84,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_control-release/archive/release/humble/controller_manager/2.16.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/controller_manager"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_control-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_control-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f18b1f89ab0ac780b585a650fd4e5a52d4249662"
 S = "${WORKDIR}/git"
 

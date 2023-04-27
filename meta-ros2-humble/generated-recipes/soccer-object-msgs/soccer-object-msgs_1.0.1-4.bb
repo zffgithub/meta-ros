@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/soccer_object_msgs-release/archive/release/humble/soccer_object_msgs/1.0.1-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/soccer_object_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/soccer_object_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/soccer_object_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "662d3ec38925a4ffd53e39d7f4d278f6f611ef2d"
 S = "${WORKDIR}/git"
 

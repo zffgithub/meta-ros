@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/velodyne_simulator-release/archive/release/humble/velodyne_description/2.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/velodyne_description"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/velodyne_simulator-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/velodyne_simulator-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8c85e231b0d256ed4374801e7fed2b8ed749631f"
 S = "${WORKDIR}/git"
 

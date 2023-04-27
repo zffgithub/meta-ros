@@ -82,7 +82,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/moveit_visual_tools-release/archive/release/humble/moveit_visual_tools/4.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/moveit_visual_tools"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/moveit_visual_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/moveit_visual_tools-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "adde5e2d385ca8a32468b1da8189cf72a842c611"
 S = "${WORKDIR}/git"
 

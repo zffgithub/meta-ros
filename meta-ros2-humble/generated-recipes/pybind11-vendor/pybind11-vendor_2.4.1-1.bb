@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/pybind11_vendor-release/archive/release/humble/pybind11_vendor/2.4.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/pybind11_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/pybind11_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/pybind11_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9ecdc8a535e1e4d7f8be8a1be8fe629e7a2f1326"
 S = "${WORKDIR}/git"
 

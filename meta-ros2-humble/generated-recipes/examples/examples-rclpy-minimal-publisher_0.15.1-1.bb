@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/examples-release/archive/release/humble/examples_rclpy_minimal_publisher/0.15.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/examples_rclpy_minimal_publisher"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/examples-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/examples-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "be57e48d293a3615908f502c966e22dcee9c66b3"
 S = "${WORKDIR}/git"
 

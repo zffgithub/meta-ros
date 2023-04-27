@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/imu_tools-release/archive/release/humble/imu_complementary_filter/2.1.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/imu_complementary_filter"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/imu_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/imu_tools-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ae8d3589dc4605eb98e24e3e2f8b546ed4cd00d3"
 S = "${WORKDIR}/git"
 

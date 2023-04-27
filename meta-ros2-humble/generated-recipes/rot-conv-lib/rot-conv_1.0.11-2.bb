@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rot_conv_lib-release/archive/release/humble/rot_conv/1.0.11-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rot_conv"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rot_conv_lib-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rot_conv_lib-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e793af8fd25bf694648d7b8e11490252c3b848ff"
 S = "${WORKDIR}/git"
 

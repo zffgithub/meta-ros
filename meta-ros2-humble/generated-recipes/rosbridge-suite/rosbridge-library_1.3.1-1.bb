@@ -65,7 +65,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosbridge_suite-release/archive/release/humble/rosbridge_library/1.3.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosbridge_library"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosbridge_suite-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosbridge_suite-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "edbb4419b9e085815ce9a881db1eee5f5d65bd68"
 S = "${WORKDIR}/git"
 

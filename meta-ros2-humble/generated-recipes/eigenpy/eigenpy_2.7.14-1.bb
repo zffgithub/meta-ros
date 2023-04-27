@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/eigenpy-release/archive/release/humble/eigenpy/2.7.14-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/eigenpy"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/eigenpy-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/eigenpy-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "717c2505696f5984dc3ae9fb1236dafddf93f340"
 S = "${WORKDIR}/git"
 

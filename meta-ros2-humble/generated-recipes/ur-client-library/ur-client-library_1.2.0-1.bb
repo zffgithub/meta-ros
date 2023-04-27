@@ -42,7 +42,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/Universal_Robots_Client_Library-release/archive/release/humble/ur_client_library/1.2.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ur_client_library"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/Universal_Robots_Client_Library-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/Universal_Robots_Client_Library-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1c7a6d33e5029cf2567ccee9e20b04e2c39817a5"
 S = "${WORKDIR}/git"
 

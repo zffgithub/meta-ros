@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rc_dynamics_api-release/archive/release/humble/rc_dynamics_api/0.10.3-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rc_dynamics_api"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rc_dynamics_api-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rc_dynamics_api-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "36e79e3504cca56a5078a5cb54f350ebf895868c"
 S = "${WORKDIR}/git"
 

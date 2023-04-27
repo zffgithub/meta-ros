@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosbag2-release/archive/release/humble/rosbag2_tests/0.15.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosbag2_tests"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosbag2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosbag2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "91644cd5fa3700684d265c7b6faf891f7e6dace4"
 S = "${WORKDIR}/git"
 

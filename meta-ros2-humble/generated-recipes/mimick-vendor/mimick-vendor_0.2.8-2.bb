@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/mimick_vendor-release/archive/release/humble/mimick_vendor/0.2.8-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/mimick_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/mimick_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/mimick_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c2c7cccbfa6551d7fc2bc10a126313e45c963c0b"
 S = "${WORKDIR}/git"
 

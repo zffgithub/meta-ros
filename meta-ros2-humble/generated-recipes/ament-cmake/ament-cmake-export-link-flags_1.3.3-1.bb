@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ament_cmake-release/archive/release/humble/ament_cmake_export_link_flags/1.3.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ament_cmake_export_link_flags"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ament_cmake-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ament_cmake-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "7f393c221455570e31b2b24b1c813b18f0b27de9"
 S = "${WORKDIR}/git"
 

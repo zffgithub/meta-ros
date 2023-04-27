@@ -56,7 +56,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros_ign-release/archive/release/humble/ros_ign_interfaces/0.244.9-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros_ign_interfaces"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros_ign-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros_ign-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "d2f7d41136f5e697bd38dcc0f70f91dc073ca08e"
 S = "${WORKDIR}/git"
 

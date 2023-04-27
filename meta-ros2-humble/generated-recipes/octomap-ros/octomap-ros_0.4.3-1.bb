@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/octomap_ros-release/archive/release/humble/octomap_ros/0.4.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/octomap_ros"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/octomap_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/octomap_ros-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "aac3835a57fdfb8d8912c28a0b9609929f65332b"
 S = "${WORKDIR}/git"
 

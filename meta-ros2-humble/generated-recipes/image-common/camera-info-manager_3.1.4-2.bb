@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_common-release/archive/release/humble/camera_info_manager/3.1.4-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/camera_info_manager"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_common-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9071abc79c7b7ebb9461fae6b63bb95c7f33fa38"
 S = "${WORKDIR}/git"
 

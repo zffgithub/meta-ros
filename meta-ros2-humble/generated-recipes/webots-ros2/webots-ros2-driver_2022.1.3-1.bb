@@ -83,7 +83,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_driver/2022.1.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/webots_ros2_driver"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/webots_ros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/webots_ros2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a3dfacb2ee2c60f38eda35d3adcf8be424e492bf"
 S = "${WORKDIR}/git"
 

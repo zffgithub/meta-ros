@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/eigen_stl_containers-release/archive/release/humble/eigen_stl_containers/1.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/eigen_stl_containers"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/eigen_stl_containers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/eigen_stl_containers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8bdb30dd22e53f364906b4268c5af05af3420230"
 S = "${WORKDIR}/git"
 

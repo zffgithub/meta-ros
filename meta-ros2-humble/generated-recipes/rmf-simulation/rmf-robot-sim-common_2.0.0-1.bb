@@ -72,7 +72,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_simulation-release/archive/release/humble/rmf_robot_sim_common/2.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_robot_sim_common"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_simulation-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_simulation-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e2c1a75f63e1b5e7c4a6ecb25408beea78759579"
 S = "${WORKDIR}/git"
 

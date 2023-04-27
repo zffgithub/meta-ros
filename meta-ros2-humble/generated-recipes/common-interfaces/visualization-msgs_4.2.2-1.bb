@@ -61,7 +61,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/common_interfaces-release/archive/release/humble/visualization_msgs/4.2.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/visualization_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/common_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/common_interfaces-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "6ad907e4beef596800b992179fdc3ace28f5ec44"
 S = "${WORKDIR}/git"
 

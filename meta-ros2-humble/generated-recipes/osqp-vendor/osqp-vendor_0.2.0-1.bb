@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/osqp_vendor-release/archive/release/humble/osqp_vendor/0.2.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/osqp_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/osqp_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/osqp_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "7c66f6cea0817fc325370b9231f1eb5d5e983ab3"
 S = "${WORKDIR}/git"
 

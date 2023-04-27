@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tango_icons_vendor-release/archive/release/humble/tango_icons_vendor/0.1.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tango_icons_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/tango_icons_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/tango_icons_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a391cbcb71fcf8f5811d814e8f87c947f2fb1e8e"
 S = "${WORKDIR}/git"
 

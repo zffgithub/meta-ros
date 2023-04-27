@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/urg_node_msgs-release/archive/release/humble/urg_node_msgs/1.0.1-6.tar.gz
 ROS_BRANCH ?= "branch=release/humble/urg_node_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/urg_node_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/urg_node_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "4b2efb8baf255e8c5325f11a9530c963ff6f5e55"
 S = "${WORKDIR}/git"
 

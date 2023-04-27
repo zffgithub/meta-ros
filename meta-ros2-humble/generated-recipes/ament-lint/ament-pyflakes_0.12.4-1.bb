@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ament_lint-release/archive/release/humble/ament_pyflakes/0.12.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ament_pyflakes"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ament_lint-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ament_lint-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a23baf38596aa440c9266996e6d5a8bb5f9c07f4"
 S = "${WORKDIR}/git"
 

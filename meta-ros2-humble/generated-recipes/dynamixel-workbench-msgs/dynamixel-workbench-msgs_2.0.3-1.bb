@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/dynamixel_workbench_msgs-release/archive/release/humble/dynamixel_workbench_msgs/2.0.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/dynamixel_workbench_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/dynamixel_workbench_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/dynamixel_workbench_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1f0195e5668ee85a8d8c37dd55f1e54cd140cff7"
 S = "${WORKDIR}/git"
 

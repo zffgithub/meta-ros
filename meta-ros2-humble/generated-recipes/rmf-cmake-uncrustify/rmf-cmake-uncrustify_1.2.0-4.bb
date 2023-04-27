@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_cmake_uncrustify-release/archive/release/humble/rmf_cmake_uncrustify/1.2.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_cmake_uncrustify"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_cmake_uncrustify-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_cmake_uncrustify-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "4f75f75ff8ee560fb1244cd41e7fba274d7d9dc8"
 S = "${WORKDIR}/git"
 

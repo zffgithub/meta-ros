@@ -65,7 +65,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_ros2-release/archive/release/humble/rmf_websocket/2.1.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_websocket"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_ros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_ros2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "7ec60720d6a3de5c46b1ca80bccb76de2248324b"
 S = "${WORKDIR}/git"
 

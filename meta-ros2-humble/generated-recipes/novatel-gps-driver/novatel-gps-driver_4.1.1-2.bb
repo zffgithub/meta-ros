@@ -94,7 +94,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/novatel_gps_driver-release/archive/release/humble/novatel_gps_driver/4.1.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/novatel_gps_driver"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/novatel_gps_driver-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/novatel_gps_driver-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "59567a9ab25b0f9fd38a2d4077b4676f26ab3e45"
 S = "${WORKDIR}/git"
 

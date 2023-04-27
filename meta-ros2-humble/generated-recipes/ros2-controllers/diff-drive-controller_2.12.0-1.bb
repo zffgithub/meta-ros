@@ -79,7 +79,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_controllers-release/archive/release/humble/diff_drive_controller/2.12.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/diff_drive_controller"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1550a1217bf6ce44b095d9b6bb77eead28702a11"
 S = "${WORKDIR}/git"
 

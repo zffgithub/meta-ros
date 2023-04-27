@@ -115,7 +115,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/cartographer_ros-release/archive/release/humble/cartographer_ros/2.0.9000-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/cartographer_ros"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/cartographer_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/cartographer_ros-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a0ef7548b9a0b161e91be725d07a4f67b116de21"
 S = "${WORKDIR}/git"
 

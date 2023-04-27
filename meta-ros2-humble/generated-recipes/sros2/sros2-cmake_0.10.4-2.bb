@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/sros2-release/archive/release/humble/sros2_cmake/0.10.4-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/sros2_cmake"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/sros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/sros2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c1c0bc34bf2dbf1fc440c5b75108261a5588d0fb"
 S = "${WORKDIR}/git"
 

@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/qt_gui_core-release/archive/release/humble/qt_dotgraph/2.2.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/qt_dotgraph"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/qt_gui_core-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/qt_gui_core-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1f44189f82909097fb1f3eff1d5353a77a0502f7"
 S = "${WORKDIR}/git"
 

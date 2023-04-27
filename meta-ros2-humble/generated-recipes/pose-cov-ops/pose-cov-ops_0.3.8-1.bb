@@ -60,7 +60,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/pose_cov_ops-release/archive/release/humble/pose_cov_ops/0.3.8-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/pose_cov_ops"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/pose_cov_ops-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/pose_cov_ops-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "95060d783e020271064203ba3118fda2831971fd"
 S = "${WORKDIR}/git"
 

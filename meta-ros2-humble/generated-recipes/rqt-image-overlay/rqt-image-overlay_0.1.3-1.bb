@@ -74,7 +74,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_image_overlay-release/archive/release/humble/rqt_image_overlay/0.1.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_image_overlay"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_image_overlay-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_image_overlay-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "21a5457794b5abc8893f31092e6de6f397b7822b"
 S = "${WORKDIR}/git"
 

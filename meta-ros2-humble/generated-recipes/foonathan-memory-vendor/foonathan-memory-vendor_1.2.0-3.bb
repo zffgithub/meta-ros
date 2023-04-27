@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/foonathan_memory_vendor-release/archive/release/humble/foonathan_memory_vendor/1.2.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/foonathan_memory_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/foonathan_memory_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/foonathan_memory_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1cf70fe6d74f7fc0f536aab4ba0bf7c1cc0d852c"
 S = "${WORKDIR}/git"
 

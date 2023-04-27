@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/hash_library_vendor-release/archive/release/humble/hash_library_vendor/0.1.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/hash_library_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/hash_library_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/hash_library_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e31045b72d50216a20845e9bd76f689bff2f00f0"
 S = "${WORKDIR}/git"
 

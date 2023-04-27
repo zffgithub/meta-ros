@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_controllers-release/archive/release/humble/effort_controllers/2.12.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/effort_controllers"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "72692f51353ddcc2d997fe3681becfeb855bfe26"
 S = "${WORKDIR}/git"
 

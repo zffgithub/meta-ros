@@ -72,7 +72,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/avt_vimba_camera-release/archive/release/humble/avt_vimba_camera/2001.1.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/avt_vimba_camera"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/avt_vimba_camera-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/avt_vimba_camera-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "98269e9716399c2d996f6dedfd1cd2d1dac97b03"
 S = "${WORKDIR}/git"
 

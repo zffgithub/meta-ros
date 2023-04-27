@@ -85,7 +85,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/gazebo_ros_pkgs-release/archive/release/humble/gazebo_ros/3.7.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/gazebo_ros"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/gazebo_ros_pkgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/gazebo_ros_pkgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "dbc0fcb5202c48c98c7dd25043757e168aa19c6b"
 S = "${WORKDIR}/git"
 

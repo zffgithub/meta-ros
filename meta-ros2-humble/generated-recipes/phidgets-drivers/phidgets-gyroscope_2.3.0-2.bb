@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/phidgets_drivers-release/archive/release/humble/phidgets_gyroscope/2.3.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/phidgets_gyroscope"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/phidgets_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/phidgets_drivers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "12c0ed254e8a148e09e8b1d3a2801d861e506e80"
 S = "${WORKDIR}/git"
 

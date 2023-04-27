@@ -67,7 +67,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/bag2_to_image-release/archive/release/humble/bag2_to_image/0.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/bag2_to_image"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/bag2_to_image-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/bag2_to_image-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9335eca7334e6746b0b197b495b2930f7f6cf4b9"
 S = "${WORKDIR}/git"
 

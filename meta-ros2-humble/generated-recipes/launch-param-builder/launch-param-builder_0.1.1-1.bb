@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/launch_param_builder-release/archive/release/humble/launch_param_builder/0.1.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/launch_param_builder"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/launch_param_builder-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/launch_param_builder-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2fc753ad0e1019842dd8a41cad0b92e56658e7c7"
 S = "${WORKDIR}/git"
 

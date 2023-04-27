@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/kobuki_ros_interfaces-release/archive/release/humble/kobuki_ros_interfaces/1.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/kobuki_ros_interfaces"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/kobuki_ros_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/kobuki_ros_interfaces-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b9cf881332db5857b6623eb712bba4b2adf09d22"
 S = "${WORKDIR}/git"
 

@@ -56,7 +56,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros_image_to_qimage-release/archive/release/humble/ros_image_to_qimage/0.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros_image_to_qimage"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros_image_to_qimage-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros_image_to_qimage-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "6a7a548a3c8984141e6d9714f69be44ece6e484f"
 S = "${WORKDIR}/git"
 

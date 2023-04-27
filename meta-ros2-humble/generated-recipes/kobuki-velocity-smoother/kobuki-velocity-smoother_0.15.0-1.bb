@@ -67,7 +67,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/kobuki_velocity_smoother-release/archive/release/humble/kobuki_velocity_smoother/0.15.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/kobuki_velocity_smoother"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/kobuki_velocity_smoother-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/kobuki_velocity_smoother-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8e9cf62ad5c7a22e54af3d739c797f151e05281a"
 S = "${WORKDIR}/git"
 

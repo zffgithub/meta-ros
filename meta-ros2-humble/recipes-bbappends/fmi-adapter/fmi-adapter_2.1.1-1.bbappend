@@ -3,4 +3,4 @@
 # backport equivalent of following changes:
 # dashing: https://github.com/ros/rosdistro/commit/e27c2fdadc560e6ecf653d73d01d3cff10bda49e
 # foxy: https://github.com/ros/rosdistro/commit/ef8ab3a3d8ca3b9de81807050f22ec4a300fb6f2
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/fmi_adapter-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/fmi_adapter-release;${ROS_BRANCH};protocol=ssh"

@@ -112,7 +112,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rviz_visual_tools-release/archive/release/humble/rviz_visual_tools/4.1.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rviz_visual_tools"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rviz_visual_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rviz_visual_tools-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e0880b8ddf40aed6e062b8186e545b4bcc5e788d"
 S = "${WORKDIR}/git"
 

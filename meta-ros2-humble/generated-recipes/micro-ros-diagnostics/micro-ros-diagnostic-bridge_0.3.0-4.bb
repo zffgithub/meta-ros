@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/micro_ros_diagnostics-release/archive/release/humble/micro_ros_diagnostic_bridge/0.3.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/micro_ros_diagnostic_bridge"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/micro_ros_diagnostics-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/micro_ros_diagnostics-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "732edd31cab38486ec40f73af771fd29b462aee9"
 S = "${WORKDIR}/git"
 

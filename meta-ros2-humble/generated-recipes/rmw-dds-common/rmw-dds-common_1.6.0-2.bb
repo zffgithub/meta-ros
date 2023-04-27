@@ -64,7 +64,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmw_dds_common-release/archive/release/humble/rmw_dds_common/1.6.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmw_dds_common"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmw_dds_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmw_dds_common-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "eb132be25c7d578317738dff094d37f10587e676"
 S = "${WORKDIR}/git"
 

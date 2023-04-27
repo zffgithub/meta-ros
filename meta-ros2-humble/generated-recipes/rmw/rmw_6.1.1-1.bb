@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmw-release/archive/release/humble/rmw/6.1.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmw"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmw-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmw-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e87acef47c9858fd6bdec5093ec2fdf1e679907c"
 S = "${WORKDIR}/git"
 

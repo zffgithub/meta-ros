@@ -61,7 +61,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/autoware_auto_msgs-release/archive/release/humble/autoware_auto_msgs/1.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/autoware_auto_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/autoware_auto_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/autoware_auto_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e37c95c2094eda8c7d0958de0e76fb122784705d"
 S = "${WORKDIR}/git"
 

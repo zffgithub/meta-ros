@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/realtime_support-release/archive/release/humble/rttest/0.13.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rttest"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/realtime_support-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/realtime_support-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ceedc6769ac4ce59c19669c403db6588d5bae69a"
 S = "${WORKDIR}/git"
 

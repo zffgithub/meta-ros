@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros_canopen-release/archive/release/humble/can_msgs/2.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/can_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros_canopen-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros_canopen-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "adb949a615149279383edf8631eff0ad472fdf92"
 S = "${WORKDIR}/git"
 

@@ -112,7 +112,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/mrpt2-release/archive/release/humble/mrpt2/2.5.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/mrpt2"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/mrpt2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/mrpt2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ecc03499d6ae88e0b98a95f2dacfda448cd9fdd5"
 S = "${WORKDIR}/git"
 

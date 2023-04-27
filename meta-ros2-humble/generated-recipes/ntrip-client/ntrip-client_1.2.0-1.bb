@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ntrip_client-release/archive/release/humble/ntrip_client/1.2.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ntrip_client"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ntrip_client-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ntrip_client-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "073f00a97f0d3ea09f815f23f14c1b3cfb8c03d6"
 S = "${WORKDIR}/git"
 

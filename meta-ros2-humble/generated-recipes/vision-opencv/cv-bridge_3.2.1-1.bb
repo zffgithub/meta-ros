@@ -66,7 +66,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/vision_opencv-release/archive/release/humble/cv_bridge/3.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/cv_bridge"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/vision_opencv-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/vision_opencv-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "60cdf474334fe326efc60de14b0f150ec4844b97"
 S = "${WORKDIR}/git"
 

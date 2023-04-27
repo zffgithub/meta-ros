@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/qt_gui_core-release/archive/release/humble/qt_gui_cpp/2.2.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/qt_gui_cpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/qt_gui_core-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/qt_gui_core-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f6ba4f606198651cd12d48f938a1a4c621ded8c5"
 S = "${WORKDIR}/git"
 

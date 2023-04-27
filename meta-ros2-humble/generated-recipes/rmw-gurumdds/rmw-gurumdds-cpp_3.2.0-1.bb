@@ -68,7 +68,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmw_gurumdds-release/archive/release/humble/rmw_gurumdds_cpp/3.2.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmw_gurumdds_cpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmw_gurumdds-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmw_gurumdds-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8953eec7b475ab55f5f73e001f10610573a4794a"
 S = "${WORKDIR}/git"
 

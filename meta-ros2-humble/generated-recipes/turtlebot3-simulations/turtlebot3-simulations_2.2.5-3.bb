@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/turtlebot3_simulations-release/archive/release/humble/turtlebot3_simulations/2.2.5-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/turtlebot3_simulations"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/turtlebot3_simulations-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/turtlebot3_simulations-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "fd663dd2fbc9bf20a11ab1e95292d8bbbf940844"
 S = "${WORKDIR}/git"
 

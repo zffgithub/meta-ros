@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/fogros2-release/archive/release/humble/fogros2_examples/0.1.7-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/fogros2_examples"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/fogros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/fogros2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a1afb6b4adc434fc77a89b93e8fc98aac6c9a54b"
 S = "${WORKDIR}/git"
 

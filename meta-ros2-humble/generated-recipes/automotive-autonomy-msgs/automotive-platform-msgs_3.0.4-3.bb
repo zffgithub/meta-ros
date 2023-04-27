@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/automotive_autonomy_msgs-release/archive/release/humble/automotive_platform_msgs/3.0.4-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/automotive_platform_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/automotive_autonomy_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/automotive_autonomy_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "dc770c012372c52a793965e6df400574f6e44b75"
 S = "${WORKDIR}/git"
 

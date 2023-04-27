@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ament_vitis-release/archive/release/humble/ament_vitis/0.10.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ament_vitis"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ament_vitis-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ament_vitis-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2199ed0ec984089421203d993f600ff2115f30ed"
 S = "${WORKDIR}/git"
 

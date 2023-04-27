@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rcss3d_agent-release/archive/release/humble/rcss3d_agent_msgs/0.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rcss3d_agent_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rcss3d_agent-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rcss3d_agent-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b46d9079bd9dc0bef4742edba03b556a3df26714"
 S = "${WORKDIR}/git"
 

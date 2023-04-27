@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/geometry2-release/archive/release/humble/tf2_eigen_kdl/0.25.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tf2_eigen_kdl"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/geometry2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/geometry2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "bd2cf1cb3279f4bc0fef4641b5a4c4b31e0a9db8"
 S = "${WORKDIR}/git"
 

@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/variants-release/archive/release/humble/perception/0.10.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/perception"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/variants-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/variants-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2e16118c7eee6c0b31314b2f6d406449687a0e5f"
 S = "${WORKDIR}/git"
 

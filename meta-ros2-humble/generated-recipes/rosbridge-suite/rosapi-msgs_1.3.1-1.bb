@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosbridge_suite-release/archive/release/humble/rosapi_msgs/1.3.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosapi_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosbridge_suite-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosbridge_suite-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9126b2288cad31d5157341361c5035c6b328d973"
 S = "${WORKDIR}/git"
 

@@ -68,7 +68,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/system_modes-release/archive/release/humble/launch_system_modes/0.9.0-6.tar.gz
 ROS_BRANCH ?= "branch=release/humble/launch_system_modes"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/system_modes-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/system_modes-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5ec6102602547c3e95ac108a00a3cca343cb7181"
 S = "${WORKDIR}/git"
 

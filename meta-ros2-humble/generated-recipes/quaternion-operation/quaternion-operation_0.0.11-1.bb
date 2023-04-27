@@ -63,7 +63,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/quaternion_operation-release/archive/release/humble/quaternion_operation/0.0.11-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/quaternion_operation"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/quaternion_operation-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/quaternion_operation-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "49cc6236dfd05529bbfe792c9b4569999cb398a8"
 S = "${WORKDIR}/git"
 

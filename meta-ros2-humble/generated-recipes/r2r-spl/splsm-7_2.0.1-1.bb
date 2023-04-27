@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/r2r_spl-release/archive/release/humble/splsm_7/2.0.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/splsm_7"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/r2r_spl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/r2r_spl-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "786828cc15d86a3852e7d968a8d493d0452054f2"
 S = "${WORKDIR}/git"
 

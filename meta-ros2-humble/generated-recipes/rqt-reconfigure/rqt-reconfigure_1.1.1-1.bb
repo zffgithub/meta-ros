@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_reconfigure-release/archive/release/humble/rqt_reconfigure/1.1.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_reconfigure"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_reconfigure-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_reconfigure-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "427c2d24ce24c33fa403c2924384e78e681bd61b"
 S = "${WORKDIR}/git"
 

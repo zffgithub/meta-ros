@@ -60,7 +60,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nao_lola-release/archive/release/humble/nao_lola/0.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nao_lola"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/nao_lola-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/nao_lola-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "18e12d26afd52f779c2b6ee827099278b13d15ac"
 S = "${WORKDIR}/git"
 

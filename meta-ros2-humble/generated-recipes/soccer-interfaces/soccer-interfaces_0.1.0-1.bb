@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/soccer_interfaces-release/archive/release/humble/soccer_interfaces/0.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/soccer_interfaces"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/soccer_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/soccer_interfaces-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2224909394318a66fc75e1c96e4345ebe9377ca5"
 S = "${WORKDIR}/git"
 

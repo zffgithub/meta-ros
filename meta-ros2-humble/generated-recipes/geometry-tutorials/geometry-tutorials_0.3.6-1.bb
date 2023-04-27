@@ -42,7 +42,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/geometry_tutorials-release/archive/release/humble/geometry_tutorials/0.3.6-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/geometry_tutorials"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/geometry_tutorials-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/geometry_tutorials-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "476c451fc76e0509150e856ad85495f6f05d12f9"
 S = "${WORKDIR}/git"
 

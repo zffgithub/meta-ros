@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/mavros-release/archive/release/humble/mavros_msgs/2.3.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/mavros_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/mavros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/mavros-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "72c86e21a935b5b2a0f4ce0669daccfcb1e5dac9"
 S = "${WORKDIR}/git"
 

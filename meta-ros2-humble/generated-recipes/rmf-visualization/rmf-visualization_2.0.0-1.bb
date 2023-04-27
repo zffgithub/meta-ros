@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_visualization-release/archive/release/humble/rmf_visualization/2.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_visualization"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_visualization-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_visualization-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e5a9dcf8c382056469d99fbf38f4f6852ae9a176"
 S = "${WORKDIR}/git"
 

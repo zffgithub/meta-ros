@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/dynamixel_sdk-release/archive/release/humble/dynamixel_sdk_examples/3.7.60-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/dynamixel_sdk_examples"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/dynamixel_sdk-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/dynamixel_sdk-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "d39394b495973f99bb73240c1336ae45f688d6e9"
 S = "${WORKDIR}/git"
 

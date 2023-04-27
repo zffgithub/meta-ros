@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/demos-release/archive/release/humble/intra_process_demo/0.20.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/intra_process_demo"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f6bfa7df0a28e5c364649be657200ef86b61d3a7"
 S = "${WORKDIR}/git"
 

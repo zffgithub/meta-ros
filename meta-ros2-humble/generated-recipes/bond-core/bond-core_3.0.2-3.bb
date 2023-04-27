@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/bond_core-release/archive/release/humble/bond_core/3.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/bond_core"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/bond_core-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/bond_core-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "dbc98e24eeda8b1c2c59fd91c4018892778e1ec2"
 S = "${WORKDIR}/git"
 

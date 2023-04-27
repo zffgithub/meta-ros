@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nlohmann_json_schema_validator_vendor-release/archive/release/humble/nlohmann_json_schema_validator_vendor/0.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nlohmann_json_schema_validator_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/nlohmann_json_schema_validator_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/nlohmann_json_schema_validator_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9232e57d134867f6477959550de0cf6cbb8aa32c"
 S = "${WORKDIR}/git"
 

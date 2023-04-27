@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/demos-release/archive/release/humble/topic_monitor/0.20.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/topic_monitor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1ba3ebbc17c9d1e2ef4e8a309a0e85d5c96cf915"
 S = "${WORKDIR}/git"
 

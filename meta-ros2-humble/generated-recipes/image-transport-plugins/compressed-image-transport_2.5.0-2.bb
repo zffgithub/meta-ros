@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_transport_plugins-release/archive/release/humble/compressed_image_transport/2.5.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/compressed_image_transport"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_transport_plugins-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_transport_plugins-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9f951640f8b880ec34d2e191a93968bcaacd4a28"
 S = "${WORKDIR}/git"
 

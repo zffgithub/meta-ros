@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/spdlog_vendor-release/archive/release/humble/spdlog_vendor/1.3.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/spdlog_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/spdlog_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/spdlog_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1f04b84447c234643777ef97e4ff2f11926ed1f7"
 S = "${WORKDIR}/git"
 

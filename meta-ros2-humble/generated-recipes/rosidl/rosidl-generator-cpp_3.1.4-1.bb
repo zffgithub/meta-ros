@@ -61,7 +61,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl-release/archive/release/humble/rosidl_generator_cpp/3.1.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosidl_generator_cpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosidl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosidl-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "554c2b5c68299f5b97fed93eede8863c7d92b117"
 S = "${WORKDIR}/git"
 

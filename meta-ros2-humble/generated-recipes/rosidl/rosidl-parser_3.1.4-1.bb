@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl-release/archive/release/humble/rosidl_parser/3.1.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosidl_parser"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosidl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosidl-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ef2c141ef23f834b6e54d88bf64e809fc3d690b2"
 S = "${WORKDIR}/git"
 

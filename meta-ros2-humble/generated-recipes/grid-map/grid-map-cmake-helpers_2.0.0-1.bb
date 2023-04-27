@@ -41,7 +41,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/grid_map-release/archive/release/humble/grid_map_cmake_helpers/2.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/grid_map_cmake_helpers"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/grid_map-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/grid_map-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f1f8c547f0b1cb9aeb50e8b9b43168b76d45b208"
 S = "${WORKDIR}/git"
 

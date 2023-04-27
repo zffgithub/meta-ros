@@ -41,7 +41,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/osrf_testing_tools_cpp-release/archive/release/humble/osrf_testing_tools_cpp/1.5.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/osrf_testing_tools_cpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/osrf_testing_tools_cpp-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/osrf_testing_tools_cpp-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9ed6c1929ba2c9ad896e898dc92f3d0aaf758ae6"
 S = "${WORKDIR}/git"
 

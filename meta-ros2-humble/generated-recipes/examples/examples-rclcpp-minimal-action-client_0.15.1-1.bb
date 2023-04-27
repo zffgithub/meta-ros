@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/examples-release/archive/release/humble/examples_rclcpp_minimal_action_client/0.15.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/examples_rclcpp_minimal_action_client"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/examples-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/examples-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5f7b60f71beafa8e7a2f8ebda867cff8da1f79be"
 S = "${WORKDIR}/git"
 

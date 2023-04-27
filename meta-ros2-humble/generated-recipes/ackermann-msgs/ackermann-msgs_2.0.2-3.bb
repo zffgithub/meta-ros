@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ackermann_msgs-release/archive/release/humble/ackermann_msgs/2.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ackermann_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ackermann_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ackermann_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "aecae023dd2cfc21f69f76992951a3f9de9aee19"
 S = "${WORKDIR}/git"
 

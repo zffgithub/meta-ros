@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/eigen3_cmake_module-release/archive/release/humble/eigen3_cmake_module/0.1.1-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/eigen3_cmake_module"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/eigen3_cmake_module-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/eigen3_cmake_module-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "fb6325b445a199f927e85fa6eb1e2136f1b938b9"
 S = "${WORKDIR}/git"
 

@@ -60,7 +60,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/zbar_ros-release/archive/release/humble/zbar_ros/0.4.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/zbar_ros"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/zbar_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/zbar_ros-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "421047f6655726702e882af3e0983fd1c22f09ea"
 S = "${WORKDIR}/git"
 

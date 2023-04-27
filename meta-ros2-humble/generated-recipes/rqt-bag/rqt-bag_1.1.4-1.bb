@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_bag-release/archive/release/humble/rqt_bag/1.1.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_bag"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_bag-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_bag-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "37a8baeac85685449c60293b0f12b753911a078f"
 S = "${WORKDIR}/git"
 

@@ -70,7 +70,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/sdformat_urdf-release/archive/release/humble/sdformat_urdf/1.0.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/sdformat_urdf"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/sdformat_urdf-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/sdformat_urdf-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e38ebf3d65da9dc30fd1ccbea26ac029550085df"
 S = "${WORKDIR}/git"
 

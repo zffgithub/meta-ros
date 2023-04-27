@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/vitis_common-release/archive/release/humble/vitis_common/0.4.2-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/vitis_common"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/vitis_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/vitis_common-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "7ffecd62b7f4db22fd91b4496843b844ebcd8742"
 S = "${WORKDIR}/git"
 

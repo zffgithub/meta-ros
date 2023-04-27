@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_internal_msgs-release/archive/release/humble/rmf_charger_msgs/3.0.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_charger_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_internal_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_internal_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c17e4e514f1337f10b133cd8b51c5d141a0255a8"
 S = "${WORKDIR}/git"
 

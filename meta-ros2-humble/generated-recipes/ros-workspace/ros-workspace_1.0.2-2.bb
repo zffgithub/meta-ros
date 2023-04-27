@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros_workspace-release/archive/release/humble/ros_workspace/1.0.2-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros_workspace"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros_workspace-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros_workspace-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8fd20fe34b5a5cbbf636bbdf3f62efcae053166d"
 S = "${WORKDIR}/git"
 

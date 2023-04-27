@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/leo_common-release/archive/release/humble/leo_msgs/1.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/leo_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/leo_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/leo_common-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "81e20ae34b1855e08dc9d9610fe6007928fe6685"
 S = "${WORKDIR}/git"
 

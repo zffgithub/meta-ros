@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/gc_spl-release/archive/release/humble/rcgcd_spl_14_conversion/2.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rcgcd_spl_14_conversion"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/gc_spl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/gc_spl-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1e582bb404e4fded7d08ebea6473ff131aba4ce7"
 S = "${WORKDIR}/git"
 

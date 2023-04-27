@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmw_connextdds-release/archive/release/humble/rti_connext_dds_cmake_module/0.11.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rti_connext_dds_cmake_module"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmw_connextdds-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmw_connextdds-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "37d473555cc192d4e5b2e3b1db707d74e0fc4d47"
 S = "${WORKDIR}/git"
 

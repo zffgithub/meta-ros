@@ -58,7 +58,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rcl_logging-release/archive/release/humble/rcl_logging_noop/2.3.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rcl_logging_noop"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rcl_logging-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rcl_logging-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8fc4653759f7c6c2b5d0cb0e5ab6346ce4bf6a13"
 S = "${WORKDIR}/git"
 

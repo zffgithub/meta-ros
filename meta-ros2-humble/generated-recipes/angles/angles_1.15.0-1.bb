@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/angles-release/archive/release/humble/angles/1.15.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/angles"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/angles-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/angles-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "135341e21daa76932543af10a91a7d9273da40f5"
 S = "${WORKDIR}/git"
 

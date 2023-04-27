@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tensorrt_cmake_module-release/archive/release/humble/tensorrt_cmake_module/0.0.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tensorrt_cmake_module"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/tensorrt_cmake_module-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/tensorrt_cmake_module-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "7df338a9cbe3eebd8f3f8df109f149f70cefe54d"
 S = "${WORKDIR}/git"
 

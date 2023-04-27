@@ -60,7 +60,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rviz-release/archive/release/humble/rviz_rendering_tests/11.2.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rviz_rendering_tests"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rviz-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rviz-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "097cbc2ca48c35c235f0935656db137fe785f8e4"
 S = "${WORKDIR}/git"
 

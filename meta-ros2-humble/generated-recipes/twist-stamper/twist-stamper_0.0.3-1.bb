@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/twist_stamper-release/archive/release/humble/twist_stamper/0.0.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/twist_stamper"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/twist_stamper-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/twist_stamper-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "583032878908bfb10eeb7575df11e1086d12aa5a"
 S = "${WORKDIR}/git"
 

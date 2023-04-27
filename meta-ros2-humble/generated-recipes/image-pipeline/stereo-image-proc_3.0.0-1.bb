@@ -82,7 +82,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_pipeline-release/archive/release/humble/stereo_image_proc/3.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/stereo_image_proc"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_pipeline-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_pipeline-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2332eb400be3fb266bf5773bf0f53deb535b39f3"
 S = "${WORKDIR}/git"
 

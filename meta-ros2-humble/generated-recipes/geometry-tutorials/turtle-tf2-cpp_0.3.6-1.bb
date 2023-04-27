@@ -75,7 +75,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/geometry_tutorials-release/archive/release/humble/turtle_tf2_cpp/0.3.6-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/turtle_tf2_cpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/geometry_tutorials-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/geometry_tutorials-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b30442eaefe3824d0dba0fad7d36181d6dbea56a"
 S = "${WORKDIR}/git"
 

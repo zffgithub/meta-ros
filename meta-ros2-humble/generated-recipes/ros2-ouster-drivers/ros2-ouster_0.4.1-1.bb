@@ -93,7 +93,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_ouster_drivers-release/archive/release/humble/ros2_ouster/0.4.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros2_ouster"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_ouster_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_ouster_drivers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "6b3e3f31432f3826854f159bb52464ad255c4bd0"
 S = "${WORKDIR}/git"
 

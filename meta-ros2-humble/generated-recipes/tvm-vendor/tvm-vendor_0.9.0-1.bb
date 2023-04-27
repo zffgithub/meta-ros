@@ -63,7 +63,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tvm_vendor-release/archive/release/humble/tvm_vendor/0.9.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tvm_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/tvm_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/tvm_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "6bc285f4cb652a9049e57dcefe0b4499a46a05f9"
 S = "${WORKDIR}/git"
 

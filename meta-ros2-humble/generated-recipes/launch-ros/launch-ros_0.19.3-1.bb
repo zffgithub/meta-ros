@@ -72,7 +72,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/launch_ros-release/archive/release/humble/launch_ros/0.19.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/launch_ros"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/launch_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/launch_ros-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b5e05aa9bbe6adc5b3e4b24e57c125914b7dce42"
 S = "${WORKDIR}/git"
 

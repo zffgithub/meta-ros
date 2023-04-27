@@ -72,7 +72,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/imu_tools-release/archive/release/humble/rviz_imu_plugin/2.1.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rviz_imu_plugin"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/imu_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/imu_tools-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "90f6e9bdc68e6d81653a1865d814aa139e5e9adf"
 S = "${WORKDIR}/git"
 

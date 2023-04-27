@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tlsf-release/archive/release/humble/tlsf/0.7.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tlsf"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/tlsf-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/tlsf-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "77ce2b324b10579e8c09875b3da7de51811693ef"
 S = "${WORKDIR}/git"
 

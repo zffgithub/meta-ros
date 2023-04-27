@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/aws_robomaker_small_warehouse_world-release/archive/release/humble/aws_robomaker_small_warehouse_world/1.0.5-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/aws_robomaker_small_warehouse_world"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/aws_robomaker_small_warehouse_world-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/aws_robomaker_small_warehouse_world-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f9c9070e9cd91a1427854905bb1f46810f66d37d"
 S = "${WORKDIR}/git"
 

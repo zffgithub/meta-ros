@@ -78,7 +78,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_transport_plugins-release/archive/release/humble/theora_image_transport/2.5.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/theora_image_transport"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_transport_plugins-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_transport_plugins-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b9f0fc641fb5f0710b99712108fc8f4318a5781c"
 S = "${WORKDIR}/git"
 

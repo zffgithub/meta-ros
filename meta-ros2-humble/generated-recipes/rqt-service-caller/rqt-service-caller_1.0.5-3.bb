@@ -42,7 +42,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_service_caller-release/archive/release/humble/rqt_service_caller/1.0.5-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_service_caller"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_service_caller-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_service_caller-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "0e31ca73773890dede6e92dc4a97b02d0716e975"
 S = "${WORKDIR}/git"
 

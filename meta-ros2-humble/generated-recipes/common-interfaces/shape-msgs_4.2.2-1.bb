@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/common_interfaces-release/archive/release/humble/shape_msgs/4.2.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/shape_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/common_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/common_interfaces-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "30a5478e1a66d257d0ee5f4d33fdb6536f106841"
 S = "${WORKDIR}/git"
 

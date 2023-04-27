@@ -56,7 +56,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/swri_console-release/archive/release/humble/swri_console/2.0.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/swri_console"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/swri_console-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/swri_console-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "d3115239e93d7c56565390be7a7e12d5ab41b346"
 S = "${WORKDIR}/git"
 

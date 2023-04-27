@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_controllers-release/archive/release/humble/ros2_controllers_test_nodes/2.12.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros2_controllers_test_nodes"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "d8a7820fe09dbdedc174dc3f92bbbcabbf4869da"
 S = "${WORKDIR}/git"
 

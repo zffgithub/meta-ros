@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/imu_tools-release/archive/release/humble/imu_tools/2.1.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/imu_tools"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/imu_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/imu_tools-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "3eef4a0c696e9ec85527ec12053f228c764e27e2"
 S = "${WORKDIR}/git"
 

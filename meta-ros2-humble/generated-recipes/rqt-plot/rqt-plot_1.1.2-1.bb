@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_plot-release/archive/release/humble/rqt_plot/1.1.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_plot"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rqt_plot-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rqt_plot-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a724d0a6e599b13d2e191574c3654fde59516fe2"
 S = "${WORKDIR}/git"
 

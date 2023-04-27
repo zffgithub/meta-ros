@@ -81,7 +81,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/domain_bridge-release/archive/release/humble/domain_bridge/0.5.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/domain_bridge"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/domain_bridge-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/domain_bridge-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "08bee6f17bed4a71315027f4aee8ad03a5401efd"
 S = "${WORKDIR}/git"
 

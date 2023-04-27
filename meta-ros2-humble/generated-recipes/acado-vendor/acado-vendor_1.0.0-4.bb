@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/acado_vendor-release/archive/release/humble/acado_vendor/1.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/acado_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/acado_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/acado_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9131c70aa3926aa2813f07d3aacbf8a206d25025"
 S = "${WORKDIR}/git"
 

@@ -60,7 +60,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/performance_test_fixture-release/archive/release/humble/performance_test_fixture/0.0.9-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/performance_test_fixture"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/performance_test_fixture-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/performance_test_fixture-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "3949e059c67917a72d8eb73e71fc46f176c2e4ad"
 S = "${WORKDIR}/git"
 

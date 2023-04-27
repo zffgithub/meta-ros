@@ -86,7 +86,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmw_fastrtps-release/archive/release/humble/rmw_fastrtps_cpp/6.2.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmw_fastrtps_cpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmw_fastrtps-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmw_fastrtps-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5cfbea66f3a8c228a0580ab95d393b93751e5482"
 S = "${WORKDIR}/git"
 

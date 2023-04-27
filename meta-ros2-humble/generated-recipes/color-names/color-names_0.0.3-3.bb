@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/color_names-release/archive/release/humble/color_names/0.0.3-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/color_names"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/color_names-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/color_names-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "513ef6e01494eb6cb7d68e559f10b8f7495aa50d"
 S = "${WORKDIR}/git"
 

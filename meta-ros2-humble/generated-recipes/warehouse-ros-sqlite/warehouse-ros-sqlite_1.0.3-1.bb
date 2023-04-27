@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/warehouse_ros_sqlite-release/archive/release/humble/warehouse_ros_sqlite/1.0.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/warehouse_ros_sqlite"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/warehouse_ros_sqlite-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/warehouse_ros_sqlite-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c78a424ca5bfc1b62276ea79122f705786b927e5"
 S = "${WORKDIR}/git"
 

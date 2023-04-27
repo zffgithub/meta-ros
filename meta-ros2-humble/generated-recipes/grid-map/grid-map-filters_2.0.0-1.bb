@@ -66,7 +66,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/grid_map-release/archive/release/humble/grid_map_filters/2.0.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/grid_map_filters"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/grid_map-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/grid_map-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "6d182651e54752bd7328e659b65d77a410b084f8"
 S = "${WORKDIR}/git"
 

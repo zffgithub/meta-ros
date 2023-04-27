@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/leo_robot-release/archive/release/humble/leo_bringup/1.2.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/leo_bringup"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/leo_robot-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/leo_robot-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c12dee3bcd0d99ce4a29c29ca39c50177af6141d"
 S = "${WORKDIR}/git"
 

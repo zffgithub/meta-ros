@@ -66,7 +66,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rc_reason_clients-release/archive/release/humble/rc_reason_clients/0.2.1-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rc_reason_clients"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rc_reason_clients-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rc_reason_clients-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2121d3102a01ca86fbdf2282055ea9bf3e7792b1"
 S = "${WORKDIR}/git"
 

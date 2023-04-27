@@ -58,7 +58,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/control_toolbox-release/archive/release/humble/control_toolbox/2.1.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/control_toolbox"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/control_toolbox-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/control_toolbox-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5eeb53270cf357befd57f09660d2b7dc823d9ba5"
 S = "${WORKDIR}/git"
 

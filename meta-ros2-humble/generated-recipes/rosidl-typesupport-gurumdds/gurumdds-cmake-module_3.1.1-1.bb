@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl_typesupport_gurumdds-release/archive/release/humble/gurumdds_cmake_module/3.1.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/gurumdds_cmake_module"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosidl_typesupport_gurumdds-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosidl_typesupport_gurumdds-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b2e3826fad65b456da246bceab82bc5b646e3314"
 S = "${WORKDIR}/git"
 

@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_transport_plugins-release/archive/release/humble/image_transport_plugins/2.5.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/image_transport_plugins"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/image_transport_plugins-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/image_transport_plugins-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9df1f3f26b186ad9e33136ceaa49c51091f3119c"
 S = "${WORKDIR}/git"
 

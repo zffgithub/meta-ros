@@ -58,7 +58,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/joystick_drivers-release/archive/release/humble/wiimote_msgs/3.1.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/wiimote_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/joystick_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/joystick_drivers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "07b358ab40eb3888e79aa4a794a181cae406cdd0"
 S = "${WORKDIR}/git"
 

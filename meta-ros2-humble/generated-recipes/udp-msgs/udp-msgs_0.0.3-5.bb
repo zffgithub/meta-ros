@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/udp_msgs-release/archive/release/humble/udp_msgs/0.0.3-5.tar.gz
 ROS_BRANCH ?= "branch=release/humble/udp_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/udp_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/udp_msgs-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "382878b5c8f3656db0b25d3fb053466bfb21e512"
 S = "${WORKDIR}/git"
 

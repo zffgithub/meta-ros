@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/cyclonedds-release/archive/release/humble/cyclonedds/0.9.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/cyclonedds"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/cyclonedds-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/cyclonedds-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c93d793b3df0b2db57ccd0c8d8bf4b8b8776ac98"
 S = "${WORKDIR}/git"
 

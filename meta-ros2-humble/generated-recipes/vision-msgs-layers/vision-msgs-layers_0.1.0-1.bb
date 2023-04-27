@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/vision_msgs_layers-release/archive/release/humble/vision_msgs_layers/0.1.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/vision_msgs_layers"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/vision_msgs_layers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/vision_msgs_layers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c64c4ca97583e1ab6c88fbf684509da0a455a658"
 S = "${WORKDIR}/git"
 

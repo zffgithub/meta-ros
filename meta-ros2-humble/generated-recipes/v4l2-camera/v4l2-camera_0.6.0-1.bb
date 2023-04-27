@@ -64,7 +64,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_v4l2_camera-release/archive/release/humble/v4l2_camera/0.6.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/v4l2_camera"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_v4l2_camera-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_v4l2_camera-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "5743ded71ec4594c6f4c724d583cc6c67610d204"
 S = "${WORKDIR}/git"
 

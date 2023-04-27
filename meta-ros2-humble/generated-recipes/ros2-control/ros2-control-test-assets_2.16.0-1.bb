@@ -41,7 +41,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_control-release/archive/release/humble/ros2_control_test_assets/2.16.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros2_control_test_assets"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_control-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_control-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "fb71d3fa59a04554eafcb8101a9847a2bfb6692f"
 S = "${WORKDIR}/git"
 

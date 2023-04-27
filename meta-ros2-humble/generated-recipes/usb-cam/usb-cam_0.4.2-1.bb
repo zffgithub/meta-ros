@@ -80,7 +80,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/usb_cam-release/archive/release/humble/usb_cam/0.4.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/usb_cam"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/usb_cam-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/usb_cam-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "2f436f5286a9607fd98dfcc8094aec903862f7f7"
 S = "${WORKDIR}/git"
 

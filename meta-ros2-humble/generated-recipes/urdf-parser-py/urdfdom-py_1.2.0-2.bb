@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/urdfdom_py-release/archive/release/humble/urdfdom_py/1.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/urdfdom_py"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/urdfdom_py-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/urdfdom_py-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c23d4e04b0105a5048909c1b2c3207493e54c8b0"
 S = "${WORKDIR}/git"
 

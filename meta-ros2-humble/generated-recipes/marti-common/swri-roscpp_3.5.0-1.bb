@@ -69,7 +69,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/marti_common-release/archive/release/humble/swri_roscpp/3.5.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/swri_roscpp"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/marti_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/marti_common-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a990e438c00b89e1809cfb422e618b700c6a94d6"
 S = "${WORKDIR}/git"
 

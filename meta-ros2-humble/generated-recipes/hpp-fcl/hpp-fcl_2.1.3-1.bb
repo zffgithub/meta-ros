@@ -66,7 +66,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/hpp_fcl-release/archive/release/humble/hpp-fcl/2.1.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/hpp-fcl"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/hpp_fcl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/hpp_fcl-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "f840cb774c2800c073c45a54fa66e485011094d0"
 S = "${WORKDIR}/git"
 

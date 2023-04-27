@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rcl_interfaces-release/archive/release/humble/builtin_interfaces/1.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/builtin_interfaces"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rcl_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rcl_interfaces-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "3f312e522480d0cb376403a7ce368a5c0fea2436"
 S = "${WORKDIR}/git"
 

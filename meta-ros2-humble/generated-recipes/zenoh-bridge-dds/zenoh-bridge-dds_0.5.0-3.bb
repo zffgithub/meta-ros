@@ -42,7 +42,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/zenoh_bridge_dds-release/archive/release/humble/zenoh_bridge_dds/0.5.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/zenoh_bridge_dds"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/zenoh_bridge_dds-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/zenoh_bridge_dds-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "e51afe4ee9946c800b0afab583eba7faa4445afe"
 S = "${WORKDIR}/git"
 

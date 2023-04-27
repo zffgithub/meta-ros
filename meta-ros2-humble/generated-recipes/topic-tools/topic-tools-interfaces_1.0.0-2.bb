@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/topic_tools-release/archive/release/humble/topic_tools_interfaces/1.0.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/topic_tools_interfaces"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/topic_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/topic_tools-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "678b24b9eb245202d11160bbdff09ac1c4d7daf6"
 S = "${WORKDIR}/git"
 

@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/orocos_kdl_vendor-release/archive/release/humble/orocos_kdl_vendor/0.2.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/orocos_kdl_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/orocos_kdl_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/orocos_kdl_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8585c279200c15d0030b69bf8178a39912c8e3b1"
 S = "${WORKDIR}/git"
 

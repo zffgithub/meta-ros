@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rcl_interfaces-release/archive/release/humble/statistics_msgs/1.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/statistics_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rcl_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rcl_interfaces-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "daa199846667319a125fd939c8d5ca2012e17172"
 S = "${WORKDIR}/git"
 

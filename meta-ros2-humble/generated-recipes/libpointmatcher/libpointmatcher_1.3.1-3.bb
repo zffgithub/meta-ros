@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/libpointmatcher-release/archive/release/humble/libpointmatcher/1.3.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/libpointmatcher"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/libpointmatcher-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/libpointmatcher-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "0ed5b47746e28c0e56fde1b7aa17bdc0200bd58c"
 S = "${WORKDIR}/git"
 

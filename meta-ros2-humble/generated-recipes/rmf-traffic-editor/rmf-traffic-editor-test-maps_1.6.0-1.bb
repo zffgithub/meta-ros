@@ -43,7 +43,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_traffic_editor-release/archive/release/humble/rmf_traffic_editor_test_maps/1.6.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_traffic_editor_test_maps"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rmf_traffic_editor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rmf_traffic_editor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "498cc0a5c97d066d3cf0167d2e9bec7b588ba165"
 S = "${WORKDIR}/git"
 

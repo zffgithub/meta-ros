@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/dolly-release/archive/release/humble/dolly_ignition/0.4.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/dolly_ignition"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/dolly-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/dolly-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a1879098defd0ef21e2c823a4ea32884571037c1"
 S = "${WORKDIR}/git"
 

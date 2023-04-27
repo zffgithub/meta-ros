@@ -79,7 +79,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/gscam-release/archive/release/humble/gscam/2.0.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/gscam"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/gscam-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/gscam-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "19680b4e550e06ba42c71f87213a398dc1eeac56"
 S = "${WORKDIR}/git"
 

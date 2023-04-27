@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nao_button_sim-release/archive/release/humble/nao_button_sim/0.1.1-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nao_button_sim"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/nao_button_sim-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/nao_button_sim-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "828925ccf469d454ca9b8e978479eda36ffc21ef"
 S = "${WORKDIR}/git"
 

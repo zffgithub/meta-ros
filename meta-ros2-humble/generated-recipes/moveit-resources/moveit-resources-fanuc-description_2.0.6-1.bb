@@ -40,7 +40,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/moveit_resources-release/archive/release/humble/moveit_resources_fanuc_description/2.0.6-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/moveit_resources_fanuc_description"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/moveit_resources-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/moveit_resources-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a205eeac8eb51a4ef61b8a0ffce0c0a9e0eb4644"
 S = "${WORKDIR}/git"
 

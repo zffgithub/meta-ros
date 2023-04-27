@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/geometry2-release/archive/release/humble/tf2_bullet/0.25.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tf2_bullet"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/geometry2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/geometry2-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "4e083d7f50880604b051f466b2e4ea46506d35f3"
 S = "${WORKDIR}/git"
 

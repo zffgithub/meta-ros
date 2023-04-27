@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/variants-release/archive/release/humble/ros_base/0.10.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros_base"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/variants-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/variants-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "0017343a06fad0444e4792cfa54d4e89d4d49ecb"
 S = "${WORKDIR}/git"
 

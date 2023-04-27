@@ -63,7 +63,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rcl-release/archive/release/humble/rcl_yaml_param_parser/5.3.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rcl_yaml_param_parser"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rcl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rcl-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "cf81f82facfdeb8b5f77b5bb13d99b957d5f92d4"
 S = "${WORKDIR}/git"
 

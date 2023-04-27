@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/launch-release/archive/release/humble/launch_testing_ament_cmake/1.0.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/launch_testing_ament_cmake"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/launch-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/launch-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "467ffa5563a57e847319771b7ef70ddf8d116e9d"
 S = "${WORKDIR}/git"
 

@@ -46,7 +46,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tracetools_acceleration-release/archive/release/humble/tracetools_acceleration/0.4.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tracetools_acceleration"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/tracetools_acceleration-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/tracetools_acceleration-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "a97ef0fd7e73def3268800fb3b75ee623fcd3fe0"
 S = "${WORKDIR}/git"
 

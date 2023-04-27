@@ -71,7 +71,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_controllers-release/archive/release/humble/joint_state_broadcaster/2.12.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/joint_state_broadcaster"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/ros2_controllers-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "35a3c956d66a44c85a3ea6f417bdbf22b7f96bac"
 S = "${WORKDIR}/git"
 

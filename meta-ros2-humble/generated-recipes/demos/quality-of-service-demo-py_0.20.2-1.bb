@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/demos-release/archive/release/humble/quality_of_service_demo_py/0.20.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/quality_of_service_demo_py"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/demos-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "8c873f97f6b58ea60a3213a95b77f10d349bc24c"
 S = "${WORKDIR}/git"
 

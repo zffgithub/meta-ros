@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/vision_opencv-release/archive/release/humble/image_geometry/3.2.1-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/image_geometry"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/vision_opencv-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/vision_opencv-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "9e4572e523dd493d437b2eb19222a795dce032b3"
 S = "${WORKDIR}/git"
 

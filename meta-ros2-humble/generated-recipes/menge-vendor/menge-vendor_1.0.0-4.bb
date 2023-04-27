@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/menge_vendor-release/archive/release/humble/menge_vendor/1.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/menge_vendor"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/menge_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/menge_vendor-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "b2a00aedbbbd8d068feb9b6ad081c74d14f2fb49"
 S = "${WORKDIR}/git"
 

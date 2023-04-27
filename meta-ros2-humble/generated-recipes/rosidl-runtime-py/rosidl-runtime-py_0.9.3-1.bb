@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl_runtime_py-release/archive/release/humble/rosidl_runtime_py/0.9.3-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosidl_runtime_py"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/rosidl_runtime_py-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/rosidl_runtime_py-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "c4ee1fff1e977297ab98fd48657c7788a1ef5152"
 S = "${WORKDIR}/git"
 

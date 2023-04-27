@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/joint_state_publisher-release/archive/release/humble/joint_state_publisher/2.3.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/joint_state_publisher"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/joint_state_publisher-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/joint_state_publisher-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "3708dcce351bf6d61099f33f02f1cf16686cb7cd"
 S = "${WORKDIR}/git"
 

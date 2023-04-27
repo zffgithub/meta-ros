@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/dolly-release/archive/release/humble/dolly_gazebo/0.4.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/dolly_gazebo"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/dolly-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/dolly-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "1faae2586d9bff0da482d5d2dcb4716e649790f7"
 S = "${WORKDIR}/git"
 

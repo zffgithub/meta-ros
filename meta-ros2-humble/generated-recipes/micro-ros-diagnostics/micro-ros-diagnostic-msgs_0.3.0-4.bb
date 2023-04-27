@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/micro_ros_diagnostics-release/archive/release/humble/micro_ros_diagnostic_msgs/0.3.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/micro_ros_diagnostic_msgs"
-SRC_URI = "git://git@git.ddt.dev/rbt/soc/ros2-gbp/micro_ros_diagnostics-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://git@github.com/ros2-gbp/micro_ros_diagnostics-release;${ROS_BRANCH};protocol=ssh"
 SRCREV = "ed6f4e7f751c423d16cde9b0e05582117768cfa5"
 S = "${WORKDIR}/git"
 
