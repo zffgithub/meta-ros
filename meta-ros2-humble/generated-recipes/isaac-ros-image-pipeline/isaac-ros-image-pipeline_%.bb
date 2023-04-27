@@ -20,31 +20,31 @@ ROS_CN = "isaac_ros_image_pipeline"
 ROS_BPN = "isaac_ros_image_pipeline"
 
 ROS_BUILD_DEPENDS = " \
-    
+     \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    ament-cmake-native
+    ament-cmake-native \
 "
 
 ROS_EXPORT_DEPENDS = " \
     isaac-ros-image-proc \
-	isaac-ros-stereo-image-proc
+	isaac-ros-stereo-image-proc \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
     isaac-ros-image-proc \
-	isaac-ros-stereo-image-proc
+	isaac-ros-stereo-image-proc \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-lint-auto \
-	ament-lint-common
+	ament-lint-common \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"

@@ -20,30 +20,30 @@ ROS_CN = "isaac_ros_test"
 ROS_BPN = "isaac_ros_test"
 
 ROS_BUILD_DEPENDS = " \
-    
+     \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    cv-bridge
+    cv-bridge \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
-    cv-bridge
+    cv-bridge \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-flake8 \
 	ament-pep257 \
-	python3-pytest
+	python3-pytest \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"

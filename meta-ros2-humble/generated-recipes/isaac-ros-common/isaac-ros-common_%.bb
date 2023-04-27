@@ -20,29 +20,29 @@ ROS_CN = "isaac_ros_common"
 ROS_BPN = "isaac_ros_common"
 
 ROS_BUILD_DEPENDS = " \
-    
+     \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    ament-cmake-auto-native
+    ament-cmake-auto-native \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    rclcpp
+    rclcpp \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
-    rclcpp
+    rclcpp \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-lint-auto \
-	ament-lint-common
+	ament-lint-common \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"

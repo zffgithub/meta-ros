@@ -20,36 +20,36 @@ ROS_CN = "isaac_ros_nitros_point_cloud_type"
 ROS_BPN = "isaac_ros_nitros_point_cloud_type"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common
+    isaac-ros-common \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    ament-cmake-native
+    ament-cmake-native \
 "
 
 ROS_EXPORT_DEPENDS = " \
     rclcpp \
 	rclcpp-components \
 	sensor-msgs \
-	isaac-ros-nitros
+	isaac-ros-nitros \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
     rclcpp \
 	rclcpp-components \
 	sensor-msgs \
-	isaac-ros-nitros
+	isaac-ros-nitros \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-lint-auto \
 	ament-lint-common \
-	isaac-ros-test
+	isaac-ros-test \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"

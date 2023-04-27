@@ -20,36 +20,36 @@ ROS_CN = "isaac_ros_nitros_tensor_list_type"
 ROS_BPN = "isaac_ros_nitros_tensor_list_type"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common
+    isaac-ros-common \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    ament-cmake-native
+    ament-cmake-native \
 "
 
 ROS_EXPORT_DEPENDS = " \
     rclcpp \
 	rclcpp-components \
 	isaac-ros-nitros \
-	isaac-ros-tensor-list-interfaces
+	isaac-ros-tensor-list-interfaces \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
     rclcpp \
 	rclcpp-components \
 	isaac-ros-nitros \
-	isaac-ros-tensor-list-interfaces
+	isaac-ros-tensor-list-interfaces \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-lint-auto \
 	ament-lint-common \
-	isaac-ros-test
+	isaac-ros-test \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"

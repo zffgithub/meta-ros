@@ -20,11 +20,11 @@ ROS_CN = "isaac_ros_argus_camera"
 ROS_BPN = "isaac_ros_argus_camera"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common
+    isaac-ros-common \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    ament-cmake-auto-native
+    ament-cmake-auto-native \
 "
 
 ROS_EXPORT_DEPENDS = " \
@@ -36,11 +36,11 @@ ROS_EXPORT_DEPENDS = " \
 	isaac-ros-nitros-image-type \
 	rclcpp \
 	rclcpp-components \
-	tf2-ros
+	tf2-ros \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
@@ -52,14 +52,14 @@ ROS_EXEC_DEPENDS = " \
 	isaac-ros-nitros-image-type \
 	rclcpp \
 	rclcpp-components \
-	tf2-ros
+	tf2-ros \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-lint-auto \
 	ament-lint-common \
-	isaac-ros-test
+	isaac-ros-test \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"

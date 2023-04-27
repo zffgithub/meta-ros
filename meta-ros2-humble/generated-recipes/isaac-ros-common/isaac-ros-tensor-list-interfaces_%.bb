@@ -21,29 +21,29 @@ ROS_BPN = "isaac_ros_tensor_list_interfaces"
 
 ROS_BUILD_DEPENDS = " \
     isaac-ros-common \
-	rosidl-default-generators
+	rosidl-default-generators \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
-    ament-cmake-auto-native
+    ament-cmake-auto-native \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    std-msgs
+    std-msgs \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = " \
-    
+     \
 "
 
 ROS_EXEC_DEPENDS = " \
-    std-msgs
+    std-msgs \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
 ROS_TEST_DEPENDS = " \
     ament-lint-auto \
-	ament-lint-common
+	ament-lint-common \
 "
 
 DEPENDS = "${ROS_BUILD_DEPENDS} ${ROS_BUILDTOOL_DEPENDS}"
