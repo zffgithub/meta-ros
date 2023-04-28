@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/libg2o-release/archive/release/humble/libg2o/2020.5.29-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/libg2o"
-SRC_URI = "git://git@github.com/ros2-gbp/libg2o-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/libg2o-release;${ROS_BRANCH};protocol=https"
 SRCREV = "116030e56f7241794c9f0a1f0c82f08cdf39b51e"
 S = "${WORKDIR}/git"
 

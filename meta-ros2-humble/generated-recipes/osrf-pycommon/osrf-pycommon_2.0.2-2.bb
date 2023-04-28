@@ -41,7 +41,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/osrf_pycommon-release/archive/release/humble/osrf_pycommon/2.0.2-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/osrf_pycommon"
-SRC_URI = "git://git@github.com/ros2-gbp/osrf_pycommon-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/osrf_pycommon-release;${ROS_BRANCH};protocol=https"
 SRCREV = "fcbcc7841de50998987e5caf5624b9877019f770"
 S = "${WORKDIR}/git"
 

@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/iceoryx-release/archive/release/humble/iceoryx_posh/2.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/iceoryx_posh"
-SRC_URI = "git://git@github.com/ros2-gbp/iceoryx-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/iceoryx-release;${ROS_BRANCH};protocol=https"
 SRCREV = "81042e40314243c3aa8ac9858e1a0196ffb52fd6"
 S = "${WORKDIR}/git"
 

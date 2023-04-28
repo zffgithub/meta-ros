@@ -70,7 +70,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rc_genicam_driver_ros2-release/archive/release/humble/rc_genicam_driver/0.2.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rc_genicam_driver"
-SRC_URI = "git://git@github.com/ros2-gbp/rc_genicam_driver_ros2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rc_genicam_driver_ros2-release;${ROS_BRANCH};protocol=https"
 SRCREV = "51e42a27058c12d1edad83ec66d15fd31d3e2261"
 S = "${WORKDIR}/git"
 

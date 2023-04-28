@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_common-release/archive/release/humble/camera_calibration_parsers/3.1.4-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/camera_calibration_parsers"
-SRC_URI = "git://git@github.com/ros2-gbp/image_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/image_common-release;${ROS_BRANCH};protocol=https"
 SRCREV = "fbd3f4978e1c91bc5c4d4f177308c9f80edb4f72"
 S = "${WORKDIR}/git"
 

@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/qpoases_vendor-release/archive/release/humble/qpoases_vendor/3.2.3-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/qpoases_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/qpoases_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/qpoases_vendor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "b34b81f73e8dddb75471a44b1dfb5e24326d693c"
 S = "${WORKDIR}/git"
 

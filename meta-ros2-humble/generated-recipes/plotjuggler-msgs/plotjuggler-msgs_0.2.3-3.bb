@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/plotjuggler_msgs-release/archive/release/humble/plotjuggler_msgs/0.2.3-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/plotjuggler_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/plotjuggler_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/plotjuggler_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "b8a7b01e33e8640afe2ff62d450c01b33f9cdb8c"
 S = "${WORKDIR}/git"
 

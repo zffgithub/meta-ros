@@ -19,7 +19,7 @@ ROS_CN = "cartographer_ros"
 ROS_BPN = "cartographer_rviz"
 
 ROS_BUILD_DEPENDS = " \
-    abseil-cpp \
+    ${ROS_UNRESOLVED_DEP-libabsl-dev} \
     boost \
     cartographer \
     cartographer-ros \
@@ -37,7 +37,7 @@ ROS_BUILDTOOL_DEPENDS = " \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    abseil-cpp \
+    ${ROS_UNRESOLVED_DEP-libabsl-dev} \
     boost \
     cartographer \
     cartographer-ros \
@@ -53,7 +53,7 @@ ROS_EXPORT_DEPENDS = " \
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
-    abseil-cpp \
+    ${ROS_UNRESOLVED_DEP-libabsl-dev} \
     boost \
     cartographer \
     cartographer-ros \
@@ -78,7 +78,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/cartographer_ros-release/archive/release/humble/cartographer_rviz/2.0.9000-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/cartographer_rviz"
-SRC_URI = "git://git@github.com/ros2-gbp/cartographer_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/cartographer_ros-release;${ROS_BRANCH};protocol=https"
 SRCREV = "ebbd5da6f9205d13351a595e6c996ce9d1266e59"
 S = "${WORKDIR}/git"
 

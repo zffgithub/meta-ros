@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/hls_lfcd_lds_driver-release/archive/release/humble/hls_lfcd_lds_driver/2.0.4-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/hls_lfcd_lds_driver"
-SRC_URI = "git://git@github.com/ros2-gbp/hls_lfcd_lds_driver-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/hls_lfcd_lds_driver-release;${ROS_BRANCH};protocol=https"
 SRCREV = "f3180a283358295fcbc8d033f246a09e80b529d3"
 S = "${WORKDIR}/git"
 

@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/neo_simulation2-release/archive/release/humble/neo_simulation2/1.0.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/neo_simulation2"
-SRC_URI = "git://git@github.com/ros2-gbp/neo_simulation2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/neo_simulation2-release;${ROS_BRANCH};protocol=https"
 SRCREV = "4e5a0709f962636ef5ecca684d8a2f38b4f8a71e"
 S = "${WORKDIR}/git"
 

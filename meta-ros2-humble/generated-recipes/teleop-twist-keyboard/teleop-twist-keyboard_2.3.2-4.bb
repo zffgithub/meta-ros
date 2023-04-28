@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/teleop_twist_keyboard-release/archive/release/humble/teleop_twist_keyboard/2.3.2-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/teleop_twist_keyboard"
-SRC_URI = "git://git@github.com/ros2-gbp/teleop_twist_keyboard-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/teleop_twist_keyboard-release;${ROS_BRANCH};protocol=https"
 SRCREV = "cf7907fc90362f1e350ab53c0a3dbc67393b98a3"
 S = "${WORKDIR}/git"
 

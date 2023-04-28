@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/marti_messages-release/archive/release/humble/marti_dbw_msgs/1.3.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/marti_dbw_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/marti_messages-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/marti_messages-release;${ROS_BRANCH};protocol=https"
 SRCREV = "0f466d4271431876c791811298d17a757341d171"
 S = "${WORKDIR}/git"
 

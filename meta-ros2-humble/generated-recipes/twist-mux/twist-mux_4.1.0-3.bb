@@ -68,7 +68,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/twist_mux-release/archive/release/humble/twist_mux/4.1.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/twist_mux"
-SRC_URI = "git://git@github.com/ros2-gbp/twist_mux-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/twist_mux-release;${ROS_BRANCH};protocol=https"
 SRCREV = "f5c845204fedca6cc5f2be100d8b8beb2a28f230"
 S = "${WORKDIR}/git"
 

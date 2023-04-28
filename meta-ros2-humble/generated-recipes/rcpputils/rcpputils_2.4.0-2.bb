@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rcpputils-release/archive/release/humble/rcpputils/2.4.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rcpputils"
-SRC_URI = "git://git@github.com/ros2-gbp/rcpputils-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rcpputils-release;${ROS_BRANCH};protocol=https"
 SRCREV = "03a637a8c85d0d9c7ca678b41e5b24763c7d46ee"
 S = "${WORKDIR}/git"
 

@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rmf_utils-release/archive/release/humble/rmf_utils/1.4.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rmf_utils"
-SRC_URI = "git://git@github.com/ros2-gbp/rmf_utils-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rmf_utils-release;${ROS_BRANCH};protocol=https"
 SRCREV = "70cd211f69f3f11cf20f1279211e4a694a344fac"
 S = "${WORKDIR}/git"
 

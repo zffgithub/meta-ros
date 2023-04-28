@@ -68,7 +68,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/transport_drivers-release/archive/release/humble/serial_driver/1.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/serial_driver"
-SRC_URI = "git://git@github.com/ros2-gbp/transport_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/transport_drivers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "043d1a6d50a65c330aab6939ab721c168f9ead53"
 S = "${WORKDIR}/git"
 

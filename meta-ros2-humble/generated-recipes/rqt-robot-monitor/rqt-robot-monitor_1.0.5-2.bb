@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_robot_monitor-release/archive/release/humble/rqt_robot_monitor/1.0.5-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_robot_monitor"
-SRC_URI = "git://git@github.com/ros2-gbp/rqt_robot_monitor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rqt_robot_monitor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "96260c5e01ccee1c9b1381d3144565faf014ab20"
 S = "${WORKDIR}/git"
 

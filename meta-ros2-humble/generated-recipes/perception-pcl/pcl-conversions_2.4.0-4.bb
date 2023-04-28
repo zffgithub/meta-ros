@@ -66,7 +66,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/perception_pcl-release/archive/release/humble/pcl_conversions/2.4.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/pcl_conversions"
-SRC_URI = "git://git@github.com/ros2-gbp/perception_pcl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/perception_pcl-release;${ROS_BRANCH};protocol=https"
 SRCREV = "155a0c32d9f647471d17b58c635d612aea6910f3"
 S = "${WORKDIR}/git"
 

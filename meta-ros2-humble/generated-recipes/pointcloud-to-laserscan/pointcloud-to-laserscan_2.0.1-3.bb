@@ -78,7 +78,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/pointcloud_to_laserscan-release/archive/release/humble/pointcloud_to_laserscan/2.0.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/pointcloud_to_laserscan"
-SRC_URI = "git://git@github.com/ros2-gbp/pointcloud_to_laserscan-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/pointcloud_to_laserscan-release;${ROS_BRANCH};protocol=https"
 SRCREV = "0c44346b40b16b42aeff8124b906cf196b86eb27"
 S = "${WORKDIR}/git"
 

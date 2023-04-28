@@ -19,7 +19,7 @@ ROS_CN = "uncrustify_vendor"
 ROS_BPN = "uncrustify_vendor"
 
 ROS_BUILD_DEPENDS = " \
-    uncrustify \
+    ${ROS_UNRESOLVED_DEP-uncrustify} \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -28,13 +28,13 @@ ROS_BUILDTOOL_DEPENDS = " \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    uncrustify \
+    ${ROS_UNRESOLVED_DEP-uncrustify} \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
-    uncrustify \
+    ${ROS_UNRESOLVED_DEP-uncrustify} \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/uncrustify_vendor-release/archive/release/humble/uncrustify_vendor/2.0.2-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/uncrustify_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/uncrustify_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/uncrustify_vendor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "e2bddd9df7abe1099ea9788e5b3811adabe9481e"
 S = "${WORKDIR}/git"
 

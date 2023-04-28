@@ -41,7 +41,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tf_transformations_release/archive/release/humble/tf_transformations/1.0.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tf_transformations"
-SRC_URI = "git://git@github.com/ros2-gbp/tf_transformations_release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/tf_transformations_release;${ROS_BRANCH};protocol=https"
 SRCREV = "0a535603418113d3d1f54187f8b2466147379409"
 S = "${WORKDIR}/git"
 

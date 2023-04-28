@@ -18,7 +18,7 @@
 # Copyright (c) 2019-2021 LG Electronics, Inc.
 
 readonly SCRIPT_NAME="ros-generate-cache"
-readonly SCRIPT_VERSION="1.8.0"
+readonly SCRIPT_VERSION="1.7.0"
 
 # Files under ros/rosdistro/rosdep that we care about. Keep in sync with setting in ros-generate-recipes.sh .
 readonly ROSDEP_YAML_BASENAMES="base python ruby"
@@ -50,7 +50,7 @@ case $ROS_DISTRO in
         ROS_VERSION="1"
         ;;
 
-    "dashing"|"eloquent"|"foxy"|"galactic"|"humble"|"rolling")
+    "dashing"|"eloquent"|"foxy"|"galactic"|"rolling")
         ROS_VERSION="2"
         ;;
 
@@ -86,10 +86,9 @@ unset commit_timestamp
 cd - > /dev/null
 
 abort=false
-[ -z "$ROSDEP_SOURCE_PATH" ] && ROSDEP_SOURCE_PATH="/etc/ros/rosdep/sources.list.d"
 for f in $ROSDEP_YAML_BASENAMES; do
-    if ! grep -q "^yaml file://$path_to_ros_rosdistro/rosdep/$f.yaml\$" $ROSDEP_SOURCE_PATH/20-default.list; then
-        echo "ABORT: $ROSDEP_SOURCE_PATH/20-default.list doesn't point to $f.yaml in $path_to_ros_rosdistro"
+    if ! grep -q "^yaml file://$path_to_ros_rosdistro/rosdep/$f.yaml\$" /etc/ros/rosdep/sources.list.d/20-default.list; then
+        echo "ABORT: /etc/ros/rosdep/sources.list.d/20-default.list doesn't point to $f.yaml in $path_to_ros_rosdistro"
         abort=true
     fi
 done

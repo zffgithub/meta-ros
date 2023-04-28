@@ -61,7 +61,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/transport_drivers-release/archive/release/humble/io_context/1.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/io_context"
-SRC_URI = "git://git@github.com/ros2-gbp/transport_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/transport_drivers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "0c047390d59aa0b50778cb04d29430914455c9b7"
 S = "${WORKDIR}/git"
 

@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nao_interfaces-release/archive/release/humble/nao_command_msgs/0.0.4-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nao_command_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/nao_interfaces-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/nao_interfaces-release;${ROS_BRANCH};protocol=https"
 SRCREV = "d2c8ba2433026a3e928f1db9c92b5409cc0592aa"
 S = "${WORKDIR}/git"
 

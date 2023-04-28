@@ -58,7 +58,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ignition_math6_vendor-release/archive/release/humble/ignition_math6_vendor/0.0.2-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ignition_math6_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/ignition_math6_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/ignition_math6_vendor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "b5212d1728b71644c7c817796bb37ec7fa33b46b"
 S = "${WORKDIR}/git"
 

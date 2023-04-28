@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/backward_ros-release/archive/release/humble/backward_ros/1.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/backward_ros"
-SRC_URI = "git://git@github.com/ros2-gbp/backward_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/backward_ros-release;${ROS_BRANCH};protocol=https"
 SRCREV = "cdd74ec3fbb8505c14bfa376d35f7a08b65b8eb7"
 S = "${WORKDIR}/git"
 

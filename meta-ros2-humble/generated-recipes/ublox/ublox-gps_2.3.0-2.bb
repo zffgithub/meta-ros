@@ -79,7 +79,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ublox-release/archive/release/humble/ublox_gps/2.3.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ublox_gps"
-SRC_URI = "git://git@github.com/ros2-gbp/ublox-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/ublox-release;${ROS_BRANCH};protocol=https"
 SRCREV = "798c57e76c5b0441148b22241166acd0c4362558"
 S = "${WORKDIR}/git"
 

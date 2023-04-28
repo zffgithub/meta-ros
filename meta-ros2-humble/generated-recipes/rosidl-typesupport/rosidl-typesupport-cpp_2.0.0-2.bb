@@ -67,7 +67,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl_typesupport-release/archive/release/humble/rosidl_typesupport_cpp/2.0.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosidl_typesupport_cpp"
-SRC_URI = "git://git@github.com/ros2-gbp/rosidl_typesupport-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rosidl_typesupport-release;${ROS_BRANCH};protocol=https"
 SRCREV = "08cd18e05a9bbf3285b2ad22f7175d8297fec714"
 S = "${WORKDIR}/git"
 

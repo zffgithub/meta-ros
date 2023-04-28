@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/apriltag-release/archive/release/humble/apriltag/3.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/apriltag"
-SRC_URI = "git://git@github.com/ros2-gbp/apriltag-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/apriltag-release;${ROS_BRANCH};protocol=https"
 SRCREV = "523427d7ca90bf293fb80e8fa5522a9289e18f21"
 S = "${WORKDIR}/git"
 

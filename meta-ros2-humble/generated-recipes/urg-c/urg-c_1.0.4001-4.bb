@@ -40,7 +40,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/urg_c-release/archive/release/humble/urg_c/1.0.4001-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/urg_c"
-SRC_URI = "git://git@github.com/ros2-gbp/urg_c-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/urg_c-release;${ROS_BRANCH};protocol=https"
 SRCREV = "284660bdc9b127bdf4c0fe637b2220cd28c0bd8e"
 S = "${WORKDIR}/git"
 

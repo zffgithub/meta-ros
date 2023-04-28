@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/four_wheel_steering_msgs-release/archive/release/humble/four_wheel_steering_msgs/2.0.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/four_wheel_steering_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/four_wheel_steering_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/four_wheel_steering_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "eb7c7af86d9050f176759509c5bd4e2e48dbda9d"
 S = "${WORKDIR}/git"
 

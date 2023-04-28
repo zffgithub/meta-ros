@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/realtime_tools-release/archive/release/humble/realtime_tools/2.2.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/realtime_tools"
-SRC_URI = "git://git@github.com/ros2-gbp/realtime_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/realtime_tools-release;${ROS_BRANCH};protocol=https"
 SRCREV = "c492ccfbce5f2e5bc5ac27931ef86629ba0336a3"
 S = "${WORKDIR}/git"
 

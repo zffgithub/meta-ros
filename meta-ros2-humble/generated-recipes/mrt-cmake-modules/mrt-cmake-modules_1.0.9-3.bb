@@ -53,7 +53,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/mrt_cmake_modules-release/archive/release/humble/mrt_cmake_modules/1.0.9-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/mrt_cmake_modules"
-SRC_URI = "git://git@github.com/ros2-gbp/mrt_cmake_modules-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/mrt_cmake_modules-release;${ROS_BRANCH};protocol=https"
 SRCREV = "c8b3b8ca2e9dc8ab25060fc3ba1ab3948cc0ca27"
 S = "${WORKDIR}/git"
 

@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nodl_to_policy-release/archive/release/humble/nodl_to_policy/1.0.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nodl_to_policy"
-SRC_URI = "git://git@github.com/ros2-gbp/nodl_to_policy-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/nodl_to_policy-release;${ROS_BRANCH};protocol=https"
 SRCREV = "eeda7602efdc54fad5f60579ec503aeb34472d8e"
 S = "${WORKDIR}/git"
 

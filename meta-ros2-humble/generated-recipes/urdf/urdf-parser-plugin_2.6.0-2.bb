@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/urdf-release/archive/release/humble/urdf_parser_plugin/2.6.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/urdf_parser_plugin"
-SRC_URI = "git://git@github.com/ros2-gbp/urdf-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/urdf-release;${ROS_BRANCH};protocol=https"
 SRCREV = "ec11cfc4a436b162e092fb9486b3c055de5d93ea"
 S = "${WORKDIR}/git"
 

@@ -39,7 +39,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/urdfdom_headers-release/archive/release/humble/urdfdom_headers/1.0.6-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/urdfdom_headers"
-SRC_URI = "git://git@github.com/ros2-gbp/urdfdom_headers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/urdfdom_headers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "65a274bb8736b9ec74a5548474ffde4ea3738589"
 S = "${WORKDIR}/git"
 

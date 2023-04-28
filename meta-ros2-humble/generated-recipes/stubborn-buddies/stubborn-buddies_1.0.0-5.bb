@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/stubborn_buddies-release/archive/release/humble/stubborn_buddies/1.0.0-5.tar.gz
 ROS_BRANCH ?= "branch=release/humble/stubborn_buddies"
-SRC_URI = "git://git@github.com/ros2-gbp/stubborn_buddies-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/stubborn_buddies-release;${ROS_BRANCH};protocol=https"
 SRCREV = "3a57d99c24c5c430c9c76a32585eb7817f1fab25"
 S = "${WORKDIR}/git"
 

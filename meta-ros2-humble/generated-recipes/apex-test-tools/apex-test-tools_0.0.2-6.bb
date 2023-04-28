@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/apex_test_tools-release/archive/release/humble/apex_test_tools/0.0.2-6.tar.gz
 ROS_BRANCH ?= "branch=release/humble/apex_test_tools"
-SRC_URI = "git://git@github.com/ros2-gbp/apex_test_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/apex_test_tools-release;${ROS_BRANCH};protocol=https"
 SRCREV = "425ca25bee2edc8f397a0e97ade0ebbe7df83cca"
 S = "${WORKDIR}/git"
 

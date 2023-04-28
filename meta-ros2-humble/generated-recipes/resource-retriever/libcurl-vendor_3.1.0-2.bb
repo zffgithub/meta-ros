@@ -19,8 +19,8 @@ ROS_CN = "resource_retriever"
 ROS_BPN = "libcurl_vendor"
 
 ROS_BUILD_DEPENDS = " \
+    ${ROS_UNRESOLVED_DEP-file} \
     curl \
-    file \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/resource_retriever-release/archive/release/humble/libcurl_vendor/3.1.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/libcurl_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/resource_retriever-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/resource_retriever-release;${ROS_BRANCH};protocol=https"
 SRCREV = "b565298a1bba93bab7caebea32524dae79ced2f5"
 S = "${WORKDIR}/git"
 

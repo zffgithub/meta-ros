@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/python_qt_binding-release/archive/release/humble/python_qt_binding/1.1.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/python_qt_binding"
-SRC_URI = "git://git@github.com/ros2-gbp/python_qt_binding-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/python_qt_binding-release;${ROS_BRANCH};protocol=https"
 SRCREV = "d8a141715ee237c16c4f6d1979a3b11a65345c97"
 S = "${WORKDIR}/git"
 

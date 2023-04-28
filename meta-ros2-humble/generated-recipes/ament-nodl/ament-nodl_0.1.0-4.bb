@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ament_nodl-release/archive/release/humble/ament_nodl/0.1.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ament_nodl"
-SRC_URI = "git://git@github.com/ros2-gbp/ament_nodl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/ament_nodl-release;${ROS_BRANCH};protocol=https"
 SRCREV = "08f9af4308948b0901ee5d864a44c89360ecbc8c"
 S = "${WORKDIR}/git"
 

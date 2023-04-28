@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rc_genicam_api-release/archive/release/humble/rc_genicam_api/2.5.12-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rc_genicam_api"
-SRC_URI = "git://git@github.com/ros2-gbp/rc_genicam_api-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rc_genicam_api-release;${ROS_BRANCH};protocol=https"
 SRCREV = "ec18bb0c0d718c26dc0455145842d832b8938c56"
 S = "${WORKDIR}/git"
 

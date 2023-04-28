@@ -48,7 +48,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/tinyxml_vendor-release/archive/release/humble/tinyxml_vendor/0.8.3-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/tinyxml_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/tinyxml_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/tinyxml_vendor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "cf95f13d79fde833aaab628c20a546095dea500b"
 S = "${WORKDIR}/git"
 

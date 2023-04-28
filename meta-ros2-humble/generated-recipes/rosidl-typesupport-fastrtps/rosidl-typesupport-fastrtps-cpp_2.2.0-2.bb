@@ -79,7 +79,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release/archive/release/humble/rosidl_typesupport_fastrtps_cpp/2.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosidl_typesupport_fastrtps_cpp"
-SRC_URI = "git://git@github.com/ros2-gbp/rosidl_typesupport_fastrtps-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release;${ROS_BRANCH};protocol=https"
 SRCREV = "13f9ccd9866735bced9be6596136fac7ac3be1cd"
 S = "${WORKDIR}/git"
 

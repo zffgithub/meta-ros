@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/graph_msgs-release/archive/release/humble/graph_msgs/0.2.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/graph_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/graph_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/graph_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "4da0af4c5d3f9eb5f1e859e58fed7d5a0c15a240"
 S = "${WORKDIR}/git"
 

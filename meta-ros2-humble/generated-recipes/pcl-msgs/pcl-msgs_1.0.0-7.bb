@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/pcl_msgs-release/archive/release/humble/pcl_msgs/1.0.0-7.tar.gz
 ROS_BRANCH ?= "branch=release/humble/pcl_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/pcl_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/pcl_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "bfc47345603ead755899b092e701d2308a0af0a5"
 S = "${WORKDIR}/git"
 

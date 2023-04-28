@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/teleop_tools-release/archive/release/humble/joy_teleop/1.2.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/joy_teleop"
-SRC_URI = "git://git@github.com/ros2-gbp/teleop_tools-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/teleop_tools-release;${ROS_BRANCH};protocol=https"
 SRCREV = "53c4523bc26f7c51d51569848f48c15f2b0012cb"
 S = "${WORKDIR}/git"
 

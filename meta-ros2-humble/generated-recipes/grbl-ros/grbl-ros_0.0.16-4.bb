@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/grbl_ros-release/archive/release/humble/grbl_ros/0.0.16-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/grbl_ros"
-SRC_URI = "git://git@github.com/ros2-gbp/grbl_ros-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/grbl_ros-release;${ROS_BRANCH};protocol=https"
 SRCREV = "269352dd836b93ad4b11164dd00c5024fc6539f6"
 S = "${WORKDIR}/git"
 

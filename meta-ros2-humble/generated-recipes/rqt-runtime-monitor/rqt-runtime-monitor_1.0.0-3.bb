@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_runtime_monitor-release/archive/release/humble/rqt_runtime_monitor/1.0.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_runtime_monitor"
-SRC_URI = "git://git@github.com/ros2-gbp/rqt_runtime_monitor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rqt_runtime_monitor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "b47ea2988f7401dcbf6e3ec16360c352defcbdcb"
 S = "${WORKDIR}/git"
 

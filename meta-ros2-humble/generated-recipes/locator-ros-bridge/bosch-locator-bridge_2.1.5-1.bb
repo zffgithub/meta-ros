@@ -76,7 +76,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/locator_ros_bridge-release/archive/release/humble/bosch_locator_bridge/2.1.5-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/bosch_locator_bridge"
-SRC_URI = "git://git@github.com/ros2-gbp/locator_ros_bridge-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/locator_ros_bridge-release;${ROS_BRANCH};protocol=https"
 SRCREV = "11c55ba4e4abc97cd965baa00f55bd4e3f5a0e60"
 S = "${WORKDIR}/git"
 
