@@ -14,7 +14,7 @@ SECTION = "devel"
 # Original license in package.xml, joined with "&" when multiple license tags were used:
 #         "Apache License 2.0"
 LICENSE = "NVIDIA Isaac ROS Software License"
-LIC_FILES_CHKSUM = "file://package.xml;beginline=20;endline=20;md5=12c26a18c7f493fdc7e8a93b16b7c04f"
+LIC_FILES_CHKSUM = "file://package.xml;beginline=20;endline=20;md5=2c57f65cac1b03a8d1921e3e4d7f5836"
 
 ROS_CN = "isaac_ros_gxf"
 ROS_BPN = "isaac_ros_gxf"
