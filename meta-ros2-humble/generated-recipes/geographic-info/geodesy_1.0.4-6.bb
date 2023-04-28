@@ -62,7 +62,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/geographic_info-release/archive/release/humble/geodesy/1.0.4-6.tar.gz
 ROS_BRANCH ?= "branch=release/humble/geodesy"
-SRC_URI = "git://git@github.com/ros2-gbp/geographic_info-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/geographic_info-release;${ROS_BRANCH};protocol=https"
 SRCREV = "11acab53f22ee85bbc9edc4cae9ace445088a6de"
 S = "${WORKDIR}/git"
 

@@ -52,7 +52,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/apex_containers-release/archive/release/humble/apex_containers/0.0.4-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/apex_containers"
-SRC_URI = "git://git@github.com/ros2-gbp/apex_containers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/apex_containers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "377b63c3af9da61c7ee03a8275df1582270bf161"
 S = "${WORKDIR}/git"
 

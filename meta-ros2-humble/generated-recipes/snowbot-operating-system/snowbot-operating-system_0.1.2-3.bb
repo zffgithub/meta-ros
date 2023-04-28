@@ -59,7 +59,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/snowbot_release/archive/release/humble/snowbot_operating_system/0.1.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/snowbot_operating_system"
-SRC_URI = "git://git@github.com/ros2-gbp/snowbot_release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/snowbot_release;${ROS_BRANCH};protocol=https"
 SRCREV = "afd3d7236851374e05f4c011d12efba81c85b628"
 S = "${WORKDIR}/git"
 

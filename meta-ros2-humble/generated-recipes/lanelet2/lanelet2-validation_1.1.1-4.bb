@@ -64,7 +64,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/lanelet2-release/archive/release/humble/lanelet2_validation/1.1.1-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/lanelet2_validation"
-SRC_URI = "git://git@github.com/ros2-gbp/lanelet2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/lanelet2-release;${ROS_BRANCH};protocol=https"
 SRCREV = "8e7958e9d703359e8b1886003f544fe2c11ef648"
 S = "${WORKDIR}/git"
 

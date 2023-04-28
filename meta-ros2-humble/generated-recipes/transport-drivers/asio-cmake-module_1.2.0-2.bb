@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/transport_drivers-release/archive/release/humble/asio_cmake_module/1.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/asio_cmake_module"
-SRC_URI = "git://git@github.com/ros2-gbp/transport_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/transport_drivers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "a4adeccffcc5169f8c20c6355549d96fd0ea0fcd"
 S = "${WORKDIR}/git"
 

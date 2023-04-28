@@ -19,7 +19,7 @@ ROS_CN = "turtlebot3_simulations"
 ROS_BPN = "turtlebot3_gazebo"
 
 ROS_BUILD_DEPENDS = " \
-    gazebo-ros-pkgs \
+    ${ROS_UNRESOLVED_DEP-gazebo-ros-pkgs} \
     geometry-msgs \
     nav-msgs \
     rclcpp \
@@ -32,7 +32,7 @@ ROS_BUILDTOOL_DEPENDS = " \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    gazebo-ros-pkgs \
+    ${ROS_UNRESOLVED_DEP-gazebo-ros-pkgs} \
     geometry-msgs \
     nav-msgs \
     rclcpp \
@@ -43,7 +43,7 @@ ROS_EXPORT_DEPENDS = " \
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
-    gazebo-ros-pkgs \
+    ${ROS_UNRESOLVED_DEP-gazebo-ros-pkgs} \
     geometry-msgs \
     nav-msgs \
     rclcpp \
@@ -63,7 +63,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/turtlebot3_simulations-release/archive/release/humble/turtlebot3_gazebo/2.2.5-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/turtlebot3_gazebo"
-SRC_URI = "git://git@github.com/ros2-gbp/turtlebot3_simulations-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/turtlebot3_simulations-release;${ROS_BRANCH};protocol=https"
 SRCREV = "7838e977b4b17ccf8c10966e660fc8df051bab52"
 S = "${WORKDIR}/git"
 

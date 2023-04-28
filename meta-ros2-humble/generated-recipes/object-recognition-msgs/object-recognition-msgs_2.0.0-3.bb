@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/object_recognition_msgs-release/archive/release/humble/object_recognition_msgs/2.0.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/object_recognition_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/object_recognition_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/object_recognition_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "f039ec36be03ee7b713cbffc86a5d6a4534ba2a2"
 S = "${WORKDIR}/git"
 

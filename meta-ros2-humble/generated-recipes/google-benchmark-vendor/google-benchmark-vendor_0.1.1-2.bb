@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/google_benchmark_vendor-release/archive/release/humble/google_benchmark_vendor/0.1.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/google_benchmark_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/google_benchmark_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/google_benchmark_vendor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "8404e9073823235e4dc0e84d91b141033228d06d"
 S = "${WORKDIR}/git"
 

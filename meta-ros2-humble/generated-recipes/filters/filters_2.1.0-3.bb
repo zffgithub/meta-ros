@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/filters-release/archive/release/humble/filters/2.1.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/filters"
-SRC_URI = "git://git@github.com/ros2-gbp/filters-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/filters-release;${ROS_BRANCH};protocol=https"
 SRCREV = "cd05e219465ffb6f2913f6a440e5eed6bcf85764"
 S = "${WORKDIR}/git"
 

@@ -1,6 +1,6 @@
-# Copyright (c) 2022 Wind River Systems, Inc.
+# Copyright (c) 2022 Acceleration Robotics S.L. <contact@accelerationrobotics.com>
 
-ROS_BUILD_DEPENDS += " \
-    iceoryx-hoofs-native \
-    iceoryx-posh-native \
+FILESEXTRAPATHS:prepend := "${THISDIR}/${BPN}:"
+SRC_URI += " \
+    file://0001-Manually-add-CMake-macros-from-hoofs-and-posh.patch \
 "

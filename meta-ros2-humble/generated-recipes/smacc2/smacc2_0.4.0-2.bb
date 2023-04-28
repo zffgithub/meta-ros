@@ -17,8 +17,8 @@ ROS_CN = "SMACC2"
 ROS_BPN = "smacc2"
 
 ROS_BUILD_DEPENDS = " \
+    ${ROS_UNRESOLVED_DEP-liblttng-ust-dev} \
     boost \
-    lttng-ust \
     rcl \
     rclcpp \
     rclcpp-action \
@@ -33,7 +33,7 @@ ROS_BUILDTOOL_DEPENDS = " \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    lttng-ust \
+    ${ROS_UNRESOLVED_DEP-liblttng-ust-dev} \
     rcl \
     rclcpp \
     rclcpp-action \
@@ -46,8 +46,8 @@ ROS_EXPORT_DEPENDS = " \
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
+    ${ROS_UNRESOLVED_DEP-liblttng-ust-dev} \
     boost \
-    lttng-ust \
     rcl \
     rclcpp \
     rclcpp-action \
@@ -69,7 +69,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/SMACC2-release/archive/release/humble/smacc2/0.4.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/smacc2"
-SRC_URI = "git://git@github.com/ros2-gbp/SMACC2-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/SMACC2-release;${ROS_BRANCH};protocol=https"
 SRCREV = "8baa5b75d373e62fec952fb518d2b07d0fde00a5"
 S = "${WORKDIR}/git"
 

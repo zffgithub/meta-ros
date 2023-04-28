@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release/archive/release/humble/fastrtps_cmake_module/2.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/fastrtps_cmake_module"
-SRC_URI = "git://git@github.com/ros2-gbp/rosidl_typesupport_fastrtps-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release;${ROS_BRANCH};protocol=https"
 SRCREV = "7b00b20aad305df612def2997cb39e3445cbc87d"
 S = "${WORKDIR}/git"
 

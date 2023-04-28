@@ -47,7 +47,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/image_common-release/archive/release/humble/image_common/3.1.4-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/image_common"
-SRC_URI = "git://git@github.com/ros2-gbp/image_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/image_common-release;${ROS_BRANCH};protocol=https"
 SRCREV = "8bd7e401158ae0fd20805e7fa2619b2ce72b53ba"
 S = "${WORKDIR}/git"
 

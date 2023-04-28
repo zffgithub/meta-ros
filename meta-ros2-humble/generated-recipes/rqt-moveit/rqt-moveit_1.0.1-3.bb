@@ -49,7 +49,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_moveit-release/archive/release/humble/rqt_moveit/1.0.1-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_moveit"
-SRC_URI = "git://git@github.com/ros2-gbp/rqt_moveit-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rqt_moveit-release;${ROS_BRANCH};protocol=https"
 SRCREV = "b1b83260449489972fa574810727fb5ad842d893"
 S = "${WORKDIR}/git"
 

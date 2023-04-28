@@ -91,7 +91,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/geometric_shapes-release/archive/release/humble/geometric_shapes/2.1.3-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/geometric_shapes"
-SRC_URI = "git://git@github.com/ros2-gbp/geometric_shapes-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/geometric_shapes-release;${ROS_BRANCH};protocol=https"
 SRCREV = "04928b0236682c23c4d05a5cb43fc79b6fd422f3"
 S = "${WORKDIR}/git"
 

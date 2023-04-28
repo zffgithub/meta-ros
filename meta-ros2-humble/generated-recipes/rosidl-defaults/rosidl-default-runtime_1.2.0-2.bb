@@ -55,7 +55,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rosidl_defaults-release/archive/release/humble/rosidl_default_runtime/1.2.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rosidl_default_runtime"
-SRC_URI = "git://git@github.com/ros2-gbp/rosidl_defaults-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rosidl_defaults-release;${ROS_BRANCH};protocol=https"
 SRCREV = "66bde956f690df5acfbcebdebfa70ad5671f9898"
 S = "${WORKDIR}/git"
 

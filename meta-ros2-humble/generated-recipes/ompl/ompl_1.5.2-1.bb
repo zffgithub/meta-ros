@@ -50,7 +50,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ompl-release/archive/release/humble/ompl/1.5.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ompl"
-SRC_URI = "git://git@github.com/ros2-gbp/ompl-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/ompl-release;${ROS_BRANCH};protocol=https"
 SRCREV = "a6c7f9162830d90eebee53fb86055e8169b2c23c"
 S = "${WORKDIR}/git"
 

@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/adaptive_component-release/archive/release/humble/adaptive_component/0.2.1-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/adaptive_component"
-SRC_URI = "git://git@github.com/ros2-gbp/adaptive_component-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/adaptive_component-release;${ROS_BRANCH};protocol=https"
 SRCREV = "d02767b88396cd734926ccd6c08cdae656c6bb65"
 S = "${WORKDIR}/git"
 

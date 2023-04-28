@@ -57,7 +57,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/soccer_visualization-release/archive/release/humble/soccer_marker_generation/0.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/soccer_marker_generation"
-SRC_URI = "git://git@github.com/ros2-gbp/soccer_visualization-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/soccer_visualization-release;${ROS_BRANCH};protocol=https"
 SRCREV = "01da0b4dbb28210916847d97feab66618ec23347"
 S = "${WORKDIR}/git"
 

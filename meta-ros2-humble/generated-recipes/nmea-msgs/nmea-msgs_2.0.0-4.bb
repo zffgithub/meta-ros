@@ -51,7 +51,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/nmea_msgs-release/archive/release/humble/nmea_msgs/2.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/nmea_msgs"
-SRC_URI = "git://git@github.com/ros2-gbp/nmea_msgs-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/nmea_msgs-release;${ROS_BRANCH};protocol=https"
 SRCREV = "76db6bd9dc2ad52c0ad45de27871f22c64ba03b1"
 S = "${WORKDIR}/git"
 

@@ -45,7 +45,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/rqt_robot_steering-release/archive/release/humble/rqt_robot_steering/1.0.0-4.tar.gz
 ROS_BRANCH ?= "branch=release/humble/rqt_robot_steering"
-SRC_URI = "git://git@github.com/ros2-gbp/rqt_robot_steering-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/rqt_robot_steering-release;${ROS_BRANCH};protocol=https"
 SRCREV = "6c1ffb742dfb6f15d4f2a2f79dd9c490a32a0cc2"
 S = "${WORKDIR}/git"
 

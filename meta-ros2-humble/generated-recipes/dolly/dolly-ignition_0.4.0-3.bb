@@ -18,7 +18,7 @@ ROS_CN = "dolly"
 ROS_BPN = "dolly_ignition"
 
 ROS_BUILD_DEPENDS = " \
-    ros-ign-gazebo \
+    ${ROS_UNRESOLVED_DEP-ros-ign-gazebo} \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -26,15 +26,15 @@ ROS_BUILDTOOL_DEPENDS = " \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    ros-ign-gazebo \
+    ${ROS_UNRESOLVED_DEP-ros-ign-gazebo} \
 "
 
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
+    ${ROS_UNRESOLVED_DEP-ros-ign-bridge} \
+    ${ROS_UNRESOLVED_DEP-ros-ign-gazebo} \
     dolly-follow \
-    ros-ign-bridge \
-    ros-ign-gazebo \
     ros2launch \
     rviz2 \
 "
@@ -54,7 +54,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/dolly-release/archive/release/humble/dolly_ignition/0.4.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/dolly_ignition"
-SRC_URI = "git://git@github.com/ros2-gbp/dolly-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/dolly-release;${ROS_BRANCH};protocol=https"
 SRCREV = "a1879098defd0ef21e2c823a4ea32884571037c1"
 S = "${WORKDIR}/git"
 

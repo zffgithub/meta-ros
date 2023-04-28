@@ -43,7 +43,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/gps_umd-release/archive/release/humble/gps_umd/1.0.4-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/gps_umd"
-SRC_URI = "git://git@github.com/ros2-gbp/gps_umd-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/gps_umd-release;${ROS_BRANCH};protocol=https"
 SRCREV = "8d30879f63ccfb662895598c2046973a541a22d8"
 S = "${WORKDIR}/git"
 

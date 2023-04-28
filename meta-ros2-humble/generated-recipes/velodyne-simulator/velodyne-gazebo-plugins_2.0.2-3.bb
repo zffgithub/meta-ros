@@ -17,9 +17,9 @@ ROS_CN = "velodyne_simulator"
 ROS_BPN = "velodyne_gazebo_plugins"
 
 ROS_BUILD_DEPENDS = " \
-    gazebo-msgs \
-    gazebo-ros \
-    gazebo-rosdev \
+    ${ROS_UNRESOLVED_DEP-gazebo-msgs} \
+    ${ROS_UNRESOLVED_DEP-gazebo-rosdev} \
+    ${ROS_UNRESOLVED_DEP-gazebo-ros} \
     rclcpp \
     sensor-msgs \
     tf2 \
@@ -30,9 +30,9 @@ ROS_BUILDTOOL_DEPENDS = " \
 "
 
 ROS_EXPORT_DEPENDS = " \
-    gazebo-msgs \
-    gazebo-ros \
-    gazebo-rosdev \
+    ${ROS_UNRESOLVED_DEP-gazebo-msgs} \
+    ${ROS_UNRESOLVED_DEP-gazebo-rosdev} \
+    ${ROS_UNRESOLVED_DEP-gazebo-ros} \
     rclcpp \
     sensor-msgs \
     tf2 \
@@ -41,9 +41,9 @@ ROS_EXPORT_DEPENDS = " \
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
-    gazebo-msgs \
-    gazebo-ros \
-    gazebo-rosdev \
+    ${ROS_UNRESOLVED_DEP-gazebo-msgs} \
+    ${ROS_UNRESOLVED_DEP-gazebo-rosdev} \
+    ${ROS_UNRESOLVED_DEP-gazebo-ros} \
     rclcpp \
     sensor-msgs \
     tf2 \
@@ -61,7 +61,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/velodyne_simulator-release/archive/release/humble/velodyne_gazebo_plugins/2.0.2-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/velodyne_gazebo_plugins"
-SRC_URI = "git://git@github.com/ros2-gbp/velodyne_simulator-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/velodyne_simulator-release;${ROS_BRANCH};protocol=https"
 SRCREV = "5f0aab26f72318f0825d5dbec2b2a0722766b6ae"
 S = "${WORKDIR}/git"
 

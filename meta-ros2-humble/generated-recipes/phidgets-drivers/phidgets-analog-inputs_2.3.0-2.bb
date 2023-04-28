@@ -56,7 +56,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/phidgets_drivers-release/archive/release/humble/phidgets_analog_inputs/2.3.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/phidgets_analog_inputs"
-SRC_URI = "git://git@github.com/ros2-gbp/phidgets_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/phidgets_drivers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "31912884579eb14b1ddefa884cfe76084a7ea6e9"
 S = "${WORKDIR}/git"
 

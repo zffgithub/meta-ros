@@ -63,7 +63,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ros2_socketcan-release/archive/release/humble/ros2_socketcan/1.1.0-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ros2_socketcan"
-SRC_URI = "git://git@github.com/ros2-gbp/ros2_socketcan-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/ros2_socketcan-release;${ROS_BRANCH};protocol=https"
 SRCREV = "74aed3f47cf18318513287f579b6b307df719be7"
 S = "${WORKDIR}/git"
 

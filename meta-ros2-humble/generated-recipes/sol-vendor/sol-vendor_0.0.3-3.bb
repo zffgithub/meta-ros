@@ -44,7 +44,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/sol_vendor-release/archive/release/humble/sol_vendor/0.0.3-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/sol_vendor"
-SRC_URI = "git://git@github.com/ros2-gbp/sol_vendor-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/sol_vendor-release;${ROS_BRANCH};protocol=https"
 SRCREV = "34403351a738af172b80f4b644b34cd25272ff60"
 S = "${WORKDIR}/git"
 

@@ -43,7 +43,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/ouxt_common-release/archive/release/humble/ouxt_common/0.0.8-3.tar.gz
 ROS_BRANCH ?= "branch=release/humble/ouxt_common"
-SRC_URI = "git://git@github.com/ros2-gbp/ouxt_common-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/ouxt_common-release;${ROS_BRANCH};protocol=https"
 SRCREV = "c9579e94870034c334e31e7cbb21c5c964f7c4ea"
 S = "${WORKDIR}/git"
 

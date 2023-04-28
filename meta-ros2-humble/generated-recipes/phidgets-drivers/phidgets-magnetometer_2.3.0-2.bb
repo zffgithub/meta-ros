@@ -56,7 +56,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/ros2-gbp/phidgets_drivers-release/archive/release/humble/phidgets_magnetometer/2.3.0-2.tar.gz
 ROS_BRANCH ?= "branch=release/humble/phidgets_magnetometer"
-SRC_URI = "git://git@github.com/ros2-gbp/phidgets_drivers-release;${ROS_BRANCH};protocol=ssh"
+SRC_URI = "git://github.com/ros2-gbp/phidgets_drivers-release;${ROS_BRANCH};protocol=https"
 SRCREV = "fd4fb99546eeb2e0e035f6dd5ffe3770ad9bfebd"
 S = "${WORKDIR}/git"
 
