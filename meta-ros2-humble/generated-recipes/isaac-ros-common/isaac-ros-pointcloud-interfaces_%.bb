@@ -38,7 +38,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    wrong item: ['rosidl_default_runtime']
+    rosidl-default-runtime \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
