@@ -72,7 +72,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 # matches with: https://github.com/ros2-gbp/ament_cmake-release/archive/release/humble/ament_cmake/1.3.1-2.tar.gz
 ROS_BRANCH ?= "branch=main"
 SRC_URI = "git://github.com/zff-ros/isaac_ros_argus_camera;${ROS_BRANCH};protocol=https"
-SRCREV = "18cc588eeb82a3bb9c65bfe53f2ae331b17598fa"
+SRCREV = "a93ab226559fe3e876f873dd3abb10c7404c024f"
 S = "${WORKDIR}/git"
 
 ROS_BUILD_TYPE = "ament_cmake"
