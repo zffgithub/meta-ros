@@ -20,7 +20,11 @@ ROS_CN = "isaac_ros_nitros_image_type"
 ROS_BPN = "isaac_ros_nitros_image_type"
 
 ROS_BUILD_DEPENDS = " \
-     \
+    rclcpp \
+	rclcpp-components \
+	sensor-msgs \
+	isaac-ros-nitros \
+	isaac-ros-common \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -40,11 +44,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    rclcpp \
-	rclcpp-components \
-	sensor-msgs \
-	isaac-ros-nitros \
-	isaac-ros-common \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

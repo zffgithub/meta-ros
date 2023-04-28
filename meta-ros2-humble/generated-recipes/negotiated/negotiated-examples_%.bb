@@ -20,7 +20,11 @@ ROS_CN = "negotiated_examples"
 ROS_BPN = "negotiated_examples"
 
 ROS_BUILD_DEPENDS = " \
-     \
+    rclcpp \
+	rclcpp-components \
+	rclcpp-lifecycle \
+	negotiated \
+	std-msgs \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -40,11 +44,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    rclcpp \
-	rclcpp-components \
-	rclcpp-lifecycle \
-	negotiated \
-	std-msgs \
+    wrong item: ['launch', 'launch_ros']
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

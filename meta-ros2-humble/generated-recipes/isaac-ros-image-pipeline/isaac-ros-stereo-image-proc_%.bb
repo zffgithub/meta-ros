@@ -20,7 +20,21 @@ ROS_CN = "isaac_ros_stereo_image_proc"
 ROS_BPN = "isaac_ros_stereo_image_proc"
 
 ROS_BUILD_DEPENDS = " \
-     \
+    rclcpp \
+	image-transport \
+	image-geometry \
+	cv-bridge \
+	message-filters \
+	rclcpp-components \
+	sensor-msgs \
+	sensor-msgs-py \
+	stereo-msgs \
+	isaac-ros-common \
+	isaac-ros-nitros \
+	isaac-ros-nitros-camera-info-type \
+	isaac-ros-nitros-disparity-image-type \
+	isaac-ros-nitros-image-type \
+	isaac-ros-nitros-point-cloud-type \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -50,21 +64,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    rclcpp \
-	image-transport \
-	image-geometry \
-	cv-bridge \
-	message-filters \
-	rclcpp-components \
-	sensor-msgs \
-	sensor-msgs-py \
-	stereo-msgs \
-	isaac-ros-common \
-	isaac-ros-nitros \
-	isaac-ros-nitros-camera-info-type \
-	isaac-ros-nitros-disparity-image-type \
-	isaac-ros-nitros-image-type \
-	isaac-ros-nitros-point-cloud-type \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

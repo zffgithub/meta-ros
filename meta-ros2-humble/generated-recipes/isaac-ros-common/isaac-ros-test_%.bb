@@ -20,7 +20,7 @@ ROS_CN = "isaac_ros_test"
 ROS_BPN = "isaac_ros_test"
 
 ROS_BUILD_DEPENDS = " \
-     \
+    cv-bridge \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -36,7 +36,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    cv-bridge \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

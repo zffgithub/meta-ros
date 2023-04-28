@@ -20,7 +20,7 @@ ROS_CN = "isaac_ros_gxf"
 ROS_BPN = "isaac_ros_gxf"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common \
+     \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -36,7 +36,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-     \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

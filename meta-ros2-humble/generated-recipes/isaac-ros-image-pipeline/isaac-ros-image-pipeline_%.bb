@@ -20,7 +20,8 @@ ROS_CN = "isaac_ros_image_pipeline"
 ROS_BPN = "isaac_ros_image_pipeline"
 
 ROS_BUILD_DEPENDS = " \
-     \
+    isaac-ros-image-proc \
+	isaac-ros-stereo-image-proc \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -37,8 +38,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    isaac-ros-image-proc \
-	isaac-ros-stereo-image-proc \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

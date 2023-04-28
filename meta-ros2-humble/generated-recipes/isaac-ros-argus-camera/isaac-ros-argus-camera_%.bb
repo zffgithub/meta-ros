@@ -20,7 +20,15 @@ ROS_CN = "isaac_ros_argus_camera"
 ROS_BPN = "isaac_ros_argus_camera"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common \
+    camera-info-manager \
+	geometry-msgs \
+	isaac-ros-image-proc \
+	isaac-ros-nitros \
+	isaac-ros-nitros-camera-info-type \
+	isaac-ros-nitros-image-type \
+	rclcpp \
+	rclcpp-components \
+	tf2-ros \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -44,15 +52,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    camera-info-manager \
-	geometry-msgs \
-	isaac-ros-image-proc \
-	isaac-ros-nitros \
-	isaac-ros-nitros-camera-info-type \
-	isaac-ros-nitros-image-type \
-	rclcpp \
-	rclcpp-components \
-	tf2-ros \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

@@ -20,7 +20,18 @@ ROS_CN = "isaac_ros_visual_slam"
 ROS_BPN = "isaac_ros_visual_slam"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common \
+    rclcpp \
+	rclcpp-components \
+	cv-bridge \
+	sensor-msgs \
+	tf2-geometry-msgs \
+	tf2-ros \
+	tf2-msgs \
+	geometry-msgs \
+	nav-msgs \
+	visualization-msgs \
+	isaac-ros-nitros \
+	isaac-ros-visual-slam-interfaces \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -47,18 +58,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    rclcpp \
-	rclcpp-components \
-	cv-bridge \
-	sensor-msgs \
-	tf2-geometry-msgs \
-	tf2-ros \
-	tf2-msgs \
-	geometry-msgs \
-	nav-msgs \
-	visualization-msgs \
-	isaac-ros-nitros \
-	isaac-ros-visual-slam-interfaces \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

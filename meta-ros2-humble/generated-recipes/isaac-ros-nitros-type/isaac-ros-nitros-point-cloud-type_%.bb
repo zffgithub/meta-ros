@@ -20,7 +20,10 @@ ROS_CN = "isaac_ros_nitros_point_cloud_type"
 ROS_BPN = "isaac_ros_nitros_point_cloud_type"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common \
+    rclcpp \
+	rclcpp-components \
+	sensor-msgs \
+	isaac-ros-nitros \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -39,10 +42,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    rclcpp \
-	rclcpp-components \
-	sensor-msgs \
-	isaac-ros-nitros \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

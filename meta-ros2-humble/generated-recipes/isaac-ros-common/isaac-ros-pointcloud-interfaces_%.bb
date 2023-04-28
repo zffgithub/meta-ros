@@ -20,8 +20,8 @@ ROS_CN = "isaac_ros_pointcloud_interfaces"
 ROS_BPN = "isaac_ros_pointcloud_interfaces"
 
 ROS_BUILD_DEPENDS = " \
-    rosidl-default-generators \
-	isaac-ros-common \
+    builtin-interfaces \
+	std-msgs \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -38,8 +38,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    builtin-interfaces \
-	std-msgs \
+    wrong item: ['rosidl_default_runtime']
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

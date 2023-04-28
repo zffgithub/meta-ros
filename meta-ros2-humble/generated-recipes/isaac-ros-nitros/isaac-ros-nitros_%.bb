@@ -20,7 +20,12 @@ ROS_CN = "isaac_ros_nitros"
 ROS_BPN = "isaac_ros_nitros"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common \
+    negotiated \
+	rclcpp \
+	rclcpp-components \
+	std-msgs \
+	isaac-ros-nitros-interfaces \
+	isaac-ros-gxf \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -41,12 +46,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    negotiated \
-	rclcpp \
-	rclcpp-components \
-	std-msgs \
-	isaac-ros-nitros-interfaces \
-	isaac-ros-gxf \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

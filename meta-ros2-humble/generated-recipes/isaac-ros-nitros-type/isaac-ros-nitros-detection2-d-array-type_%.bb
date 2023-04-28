@@ -20,7 +20,11 @@ ROS_CN = "isaac_ros_nitros_detection2_d_array_type"
 ROS_BPN = "isaac_ros_nitros_detection2_d_array_type"
 
 ROS_BUILD_DEPENDS = " \
-    isaac-ros-common \
+    isaac-ros-nitros \
+	negotiated \
+	rclcpp \
+	rclcpp-components \
+	vision-msgs \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -40,11 +44,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    isaac-ros-nitros \
-	negotiated \
-	rclcpp \
-	rclcpp-components \
-	vision-msgs \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.

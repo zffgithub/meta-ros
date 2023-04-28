@@ -20,7 +20,8 @@ ROS_CN = "negotiated"
 ROS_BPN = "negotiated"
 
 ROS_BUILD_DEPENDS = " \
-     \
+    negotiated-interfaces \
+	rclcpp \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
@@ -37,8 +38,7 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = " \
 "
 
 ROS_EXEC_DEPENDS = " \
-    negotiated-interfaces \
-	rclcpp \
+    wrong item: []
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
