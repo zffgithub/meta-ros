@@ -64,7 +64,7 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 # matches with: https://github.com/ros2-gbp/ament_cmake-release/archive/release/humble/ament_cmake/1.3.1-2.tar.gz
 ROS_BRANCH ?= "branch=main"
 SRC_URI = "git://github.com/zff-ros/isaac_ros_nitros_image_type;${ROS_BRANCH};protocol=https"
-SRCREV = "af897c98ae82622bec9ae778509adf5579a7b9a8"
+SRCREV = "d4885fac12eecf842a52396b2a696d47c90dd101"
 S = "${WORKDIR}/git"
 
 ROS_BUILD_TYPE = "ament_cmake"
